@@ -167,6 +167,11 @@ GameManager.prototype.findAvailableChicken = function() {
 
 GameManager.prototype.runEgg = function(chicken) {
   this.chickens[chicken].egg.run(this.speed, this.api.bind(this));
+  if (Math.random()*10>8) {
+    var currentClass = "egg e-"+chicken;
+    var egg = document.getElementsByClassName(currentClass);
+    egg[0].className += ' cloth';
+  }
 };
 
 GameManager.prototype.gameOver = function() {

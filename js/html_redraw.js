@@ -8,6 +8,11 @@ function HTMLredraw() {
 
 HTMLredraw.prototype.updateEggPosition = function(data) {
   this.changeAttributesValue(['data-egg-' + data.egg], [data.position]);
+  if (data.position == 6){
+    var currentClass = "egg e-"+data.egg;
+    var egg = document.getElementsByClassName(currentClass);
+    egg[0].className = currentClass;
+  }
 };
 
 HTMLredraw.prototype.updateBasketPosition = function(data) {

@@ -66,6 +66,7 @@ Egg.prototype.run = function(speed, callback) {
   this.callback = callback;
 
   var self = this;
+
   this.timer = setInterval(function() {
     self.nextStep();
   }, speed);
