@@ -140,24 +140,34 @@ GameManager.prototype.upLevel = function () {
 };
 
 GameManager.prototype.updateScore = function (data) {
-  if (this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y) {
-    this.score += this.point;
-    this.HTMLredraw.updateScore({ value: this.score });
-
-    if (this.score >= 1000) {
-      this.gameWin();
-      return false;
-    }
-
-    if (!(this.score % 50)) {
-      this.upLevel();
-    }
+  var currentClass = "egg e-"+data.egg;
+  var egg = document.getElementsByClassName(currentClass);
+  //Жизни уходят если ловишь одежду
+  if (egg[0].classList.contains("cloth") && this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y){
+    // Дописать логику одевания рыбки
+    var baseClass = "egg e-"+data.egg;
+    egg[0].className = baseClass;
+    console.log("Поймал одежду!")
   } else {
-    this.loss++;
-    this.HTMLredraw.updateLossCount({ loss: this.loss });
-    if (this.loss > 2 && !this.over) {
-      this.gameOver();
-    }
+    if (this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y) {
+      this.score += this.point;
+      this.HTMLredraw.updateScore({ value: this.score });
+      
+      if (this.score >= 1000) {
+        this.gameWin();
+        return false;
+      }
+  
+      if (!(this.score % 50)) {
+        this.upLevel();
+      }
+    } else {
+      this.loss++;
+      this.HTMLredraw.updateLossCount({ loss: this.loss });
+      if (this.loss > 2 && !this.over) {
+        this.gameOver();
+      }
+    }  
   }
 };
 
@@ -180,9 +190,8 @@ GameManager.prototype.runEgg = function(chicken) {
     var currentClass = "egg e-"+chicken;
     var egg = document.getElementsByClassName(currentClass);
     egg[0].className += ' cloth';
-    var arr = getRandomInt(this.cloth.length)-1;
-    // Иногда index = -1, т.к. ошибка — не может прочитать getRandomInt(this.cloth[arr].length)
-    var index = getRandomInt(this.cloth[arr].length)-1;
+    var arr = getRandomInt(this.cloth.length-1);
+    var index = getRandomInt(this.cloth[arr].length-1);
     var type;
     switch (arr){
       case 0:{
@@ -215,7 +224,6 @@ GameManager.prototype.runEgg = function(chicken) {
       this.cloth[arr].splice(index,1); 
     }
     else this.cloth.splice(arr,1);
-    console.log(this.cloth);
   }
 };
 
