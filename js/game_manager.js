@@ -25,6 +25,15 @@ GameManager.prototype.init = function () {
   this.gameTimer;
 
   this.basketStartPosition = { x: 0, y: 1 };
+
+  this.cloth = [
+    ["cap","felt-boots","felt-boots-2","vest","whisker"],
+    ["boot-1","boot-2","tors-1","tors-2","tors-3"],
+    ["hat","hat-2","moustache","scarf","scarf-text"],
+    ["dress","head","lips","pot","raincoat"],
+    ["glass-1","glass-2","hair","moustache","stick"],
+    ["glass","hair","scarf","soikes","tangle"]
+  ];
 };
 
 // Set up the game
@@ -171,8 +180,49 @@ GameManager.prototype.runEgg = function(chicken) {
     var currentClass = "egg e-"+chicken;
     var egg = document.getElementsByClassName(currentClass);
     egg[0].className += ' cloth';
+    var arr = getRandomInt(this.cloth.length)-1;
+    // Иногда index = -1, т.к. ошибка — не может прочитать getRandomInt(this.cloth[arr].length)
+    var index = getRandomInt(this.cloth[arr].length)-1;
+    var type;
+    switch (arr){
+      case 0:{
+        type = "sailor";
+        break;
+      }
+      case 1:{
+        type = "girl";
+        break;
+      }
+      case 2:{
+        type = "zenit";
+        break;
+      }
+      case 3:{
+        type = "woman";
+        break;
+      }
+      case 4:{
+        type = "oldman";
+        break;
+      }
+      case 5:{
+        type = "granny";
+        break;
+      }
+    }
+    egg[0].className += ' '+ type+'_'+this.cloth[arr][index];
+    if (this.cloth[arr].length>0) {
+      this.cloth[arr].splice(index,1); 
+    }
+    else this.cloth.splice(arr,1);
+    console.log(this.cloth);
   }
 };
+
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
 GameManager.prototype.gameOver = function() {
   this.haltGear();

@@ -156,11 +156,100 @@ h3 {
     position: absolute;
   }
   #game-wrap .egg.cloth {
-    width: 45px;
-    height: 45px;
-    background: transparent url('../img/egg/sailor/cap.png') left top no-repeat !important;
+    width: 30px;
+    height: 30px;
     position: absolute;
   }
+    #game-wrap .egg.cloth.sailor_cap {
+      background: transparent url('../img/egg/sailor/cap.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.sailor_felt-boots {
+      background: transparent url('../img/egg/sailor/felt_boots.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.sailor_felt-boots-2 {
+      background: transparent url('../img/egg/sailor/felt_boots_2.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.sailor_vest {
+      background: transparent url('../img/egg/sailor/vest.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.sailor_whisker {
+      background: transparent url('../img/egg/sailor/whisker.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.girl_boot-1 {
+      background: transparent url('../img/egg/girl/boot_1.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.girl_boot-2 {
+      background: transparent url('../img/egg/girl/boot_2.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.girl_tors-1 {
+      background: transparent url('../img/egg/girl/tors_1.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.girl_tors-2 {
+      background: transparent url('../img/egg/girl/tors_2.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.girl_tors-3 {
+      background: transparent url('../img/egg/girl/tors_3.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.zenit_hat {
+      background: transparent url('../img/egg/zenit/hat.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.zenit_hat-2 {
+      background: transparent url('../img/egg/zenit/hat_2.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.zenit_moustache {
+      background: transparent url('../img/egg/zenit/moustache.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.zenit_scarf {
+      background: transparent url('../img/egg/zenit/scarf.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.zenit_scarf-text {
+      background: transparent url('../img/egg/zenit/scarf_text.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.woman_dress {
+      background: transparent url('../img/egg/woman/dress.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.woman_head {
+      background: transparent url('../img/egg/woman/head.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.woman_lips {
+      background: transparent url('../img/egg/woman/lips.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.woman_pot {
+      background: transparent url('../img/egg/woman/pot.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.woman_raincoat {
+      background: transparent url('../img/egg/woman/raincoat.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.oldman_glass-1 {
+      background: transparent url('../img/egg/oldman/glass-1.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.oldman_glass-2 {
+      background: transparent url('../img/egg/oldman/glass-2.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.oldman_hair {
+      background: transparent url('../img/egg/oldman/hair.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.oldman_moustache {
+      background: transparent url('../img/egg/oldman/moustache.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.oldman_stick {
+      background: transparent url('../img/egg/oldman/stick.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.granny_glass {
+      background: transparent url('../img/egg/granny/glass.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.granny_hair {
+      background: transparent url('../img/egg/granny/hair.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.granny_scarf {
+      background: transparent url('../img/egg/granny/scarf.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.granny_spokes {
+      background: transparent url('../img/egg/granny/spokes.png') left top no-repeat !important;
+    }
+    #game-wrap .egg.cloth.granny_tangle {
+      background: transparent url('../img/egg/granny/tangle.png') left top no-repeat !important;
+    }
     #game-wrap[data-egg-0="0"] .egg.e-0,
     #game-wrap[data-egg-1="0"] .egg.e-1,
     #game-wrap[data-egg-2="0"] .egg.e-2,
@@ -354,7 +443,7 @@ h3 {
     /*ОДЕЖДА*/
     /* Egg bottom-left */
     #game-wrap[data-egg-0="1"] .egg.e-0.cloth {
-      top: 164px;
+      top: 175px;
       left: 26px;
       -moz-transform:rotate(65deg);
       -webkit-transform:rotate(65deg);
@@ -363,7 +452,7 @@ h3 {
       transform: rotate(65deg);
     }
     #game-wrap[data-egg-0="2"] .egg.e-0.cloth {
-      top: 175px;
+      top: 186px;
       left: 46px;
       -moz-transform:rotate(118deg);
       -webkit-transform:rotate(118deg);
@@ -372,7 +461,7 @@ h3 {
       transform: rotate(118deg);
     }
     #game-wrap[data-egg-0="3"] .egg.e-0.cloth {
-      top: 186px;
+      top: 197px;
       left: 66px;
       -moz-transform:rotate(162deg);
       -webkit-transform:rotate(162deg);
@@ -381,7 +470,7 @@ h3 {
       transform: rotate(162deg);
     }
     #game-wrap[data-egg-0="4"] .egg.e-0.cloth {
-      top: 197px;
+      top: 208px;
       left: 86px;
       -moz-transform:rotate(-93deg);
       -webkit-transform:rotate(-93deg);
@@ -390,7 +479,7 @@ h3 {
       transform: rotate(-93deg);
     }
     #game-wrap[data-egg-0="5"] .egg.e-0.cloth {
-      top: 206px;
+      top: 217px;
       left: 100px;
       -moz-transform:rotate(-7deg);
       -webkit-transform:rotate(-7deg);
@@ -401,7 +490,7 @@ h3 {
 
     /* Egg top-left */
     #game-wrap[data-egg-1="1"] .egg.e-1.cloth {
-      top: 89px;
+      top: 100px;
       left: 26px;
       -moz-transform:rotate(56deg);
       -webkit-transform:rotate(56deg);
@@ -410,7 +499,7 @@ h3 {
       transform: rotate(56deg);
     }
     #game-wrap[data-egg-1="2"] .egg.e-1.cloth {
-      top: 100px;
+      top: 111px;
       left: 46px;
       -moz-transform:rotate(108deg);
       -webkit-transform:rotate(108deg);
@@ -419,7 +508,7 @@ h3 {
       transform: rotate(108deg);
     }
     #game-wrap[data-egg-1="3"] .egg.e-1.cloth {
-      top: 111px;
+      top: 122px;
       left: 66px;
       -moz-transform:rotate(192deg);
       -webkit-transform:rotate(192deg);
@@ -428,7 +517,7 @@ h3 {
       transform: rotate(192deg);
     }
     #game-wrap[data-egg-1="4"] .egg.e-1.cloth {
-      top: 122px;
+      top: 133px;
       left: 86px;
       -moz-transform:rotate(-62deg);
       -webkit-transform:rotate(-62deg);
@@ -437,13 +526,13 @@ h3 {
       transform: rotate(-62deg);
     }
     #game-wrap[data-egg-1="5"] .egg.e-1.cloth {
-      top: 131px;
+      top: 142px;
       left: 100px;
     }
 
     /* Egg top-right */
     #game-wrap[data-egg-2="1"] .egg.e-2.cloth {
-      top: 89px;
+      top: 100px;
       right: 26px;
       -moz-transform:rotate(-10deg);
       -webkit-transform:rotate(-10deg);
@@ -452,7 +541,7 @@ h3 {
       transform: rotate(-10deg);
     }
     #game-wrap[data-egg-2="2"] .egg.e-2.cloth {
-      top: 100px;
+      top: 111px;
       right: 46px;
       -moz-transform:rotate(-56deg);
       -webkit-transform:rotate(-56deg);
@@ -461,7 +550,7 @@ h3 {
       transform: rotate(-56deg);
     }
     #game-wrap[data-egg-2="3"] .egg.e-2.cloth {
-      top: 111px;
+      top: 122px;
       right: 66px;
       -moz-transform:rotate(-128deg);
       -webkit-transform:rotate(-128deg);
@@ -470,7 +559,7 @@ h3 {
       transform: rotate(-128deg);
     }
     #game-wrap[data-egg-2="4"] .egg.e-2.cloth {
-      top: 122px;
+      top: 133px;
       right: 86px;
       -moz-transform:rotate(140deg);
       -webkit-transform:rotate(140deg);
@@ -479,7 +568,7 @@ h3 {
       transform: rotate(140deg);
     }
     #game-wrap[data-egg-2="5"] .egg.e-2.cloth {
-      top: 131px;
+      top: 142px;
       right: 100px;
       -moz-transform:rotate(58deg);
       -webkit-transform:rotate(58deg);
@@ -490,7 +579,7 @@ h3 {
 
     /* Egg bottom-right */
     #game-wrap[data-egg-3="1"] .egg.e-3.cloth{
-      top: 164px;
+      top: 175px;
       right: 26px;
       -moz-transform:rotate(-14deg);
       -webkit-transform:rotate(-14deg);
@@ -499,7 +588,7 @@ h3 {
       transform: rotate(-14deg);
     }
     #game-wrap[data-egg-3="2"] .egg.e-3.cloth {
-      top: 175px;
+      top: 186px;
       right: 46px;
       -moz-transform:rotate(-53deg);
       -webkit-transform:rotate(-53deg);
@@ -508,7 +597,7 @@ h3 {
       transform: rotate(-53deg);
     }
     #game-wrap[data-egg-3="3"] .egg.e-3.cloth {
-      top: 186px;
+      top: 197px;
       right: 66px;
       -moz-transform:rotate(-96deg);
       -webkit-transform:rotate(-96deg);
@@ -517,7 +606,7 @@ h3 {
       transform: rotate(-96deg);
     }
     #game-wrap[data-egg-3="4"] .egg.e-3.cloth {
-      top: 197px;
+      top: 208px;
       right: 86px;
       -moz-transform:rotate(152deg);
       -webkit-transform:rotate(152deg);
@@ -526,7 +615,7 @@ h3 {
       transform: rotate(152deg);
     }
     #game-wrap[data-egg-3="5"] .egg.e-3.cloth {
-      top: 206px;
+      top: 217px;
       right: 100px;
       -moz-transform:rotate(68deg);
       -webkit-transform:rotate(68deg);
