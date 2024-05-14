@@ -34,6 +34,8 @@ GameManager.prototype.init = function () {
     ["glass-1","glass-2","hair","moustache","stick"],
     ["glass","hair","scarf","soikes","tangle"]
   ];
+
+  this.fishScore = []
 };
 
 // Set up the game
@@ -142,19 +144,19 @@ GameManager.prototype.upLevel = function () {
 GameManager.prototype.updateScore = function (data) {
   var currentClass = "egg e-"+data.egg;
   var egg = document.getElementsByClassName(currentClass);
-  //Жизни уходят если ловишь одежду
   if (egg[0].classList.contains("cloth") && !(this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y)){
-    console.log("Не поймал "+ egg[0].classList[3])
-    
     var baseClass = "egg e-"+data.egg;
     egg[0].className = baseClass;
     return;
   }
   if (egg[0].classList.contains("cloth") && this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y){
-    
-    console.log("Поймал одежду "+egg[0].classList[3])
-    // Дописать логику одевания рыбки
-    
+    this.fishScore.push(egg[0].classList[3]);
+    this.HTMLredraw.updateFishScore({value:egg[0].classList[3]});
+    // Если собрали пять одежд — победа
+    if (this.fishScore.length==5){
+      this.gameWin();
+      return false;
+    }
     var baseClass = "egg e-"+data.egg;
     egg[0].className = baseClass;
     return;
@@ -162,11 +164,13 @@ GameManager.prototype.updateScore = function (data) {
   if (this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y) {
     this.score += this.point;
     this.HTMLredraw.updateScore({ value: this.score });
+    /* ! Условие победы по очкам
+
     if (this.score >= 1000) {
       this.gameWin();
       return false;
     }
-  
+    */
     if (!(this.score % 50)) {
       this.upLevel();
     }
@@ -266,6 +270,9 @@ GameManager.prototype.api = function(method, data) {
       break;
     case 'updateBasketPosition':
       this.HTMLredraw.updateBasketPosition(data);
+      break;
+    case 'updateFishScore':
+      this.updateFishScore(data);
       break;
   }
 };

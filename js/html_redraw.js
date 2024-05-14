@@ -28,6 +28,12 @@ HTMLredraw.prototype.changeAttributesValue = function(attributes, values) {
   }
 };
 
+HTMLredraw.prototype.updateFishScore = function(data) {
+  var element = document.getElementsByClassName('fish-score');
+  var cloth = data.value.toString();
+  element[0].className += " " +cloth;
+};
+
 HTMLredraw.prototype.updateScore = function(data) {
   var elements = this.scoreWrap.getElementsByTagName('li');
   var score = data.value.toString();
