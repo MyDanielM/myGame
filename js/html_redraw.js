@@ -31,7 +31,8 @@ HTMLredraw.prototype.changeAttributesValue = function(attributes, values) {
 HTMLredraw.prototype.updateFishScore = function(data) {
   var element = document.getElementsByClassName('fish-score');
   var cloth = data.value.toString();
-  element[0].className += " " +cloth;
+  //element[0].className += " " +cloth;
+  element[0].innerHTML += `<div class = \"${cloth}\"></div>`
 };
 
 HTMLredraw.prototype.updateScore = function(data) {

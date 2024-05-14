@@ -624,7 +624,51 @@ h3 {
       transform: rotate(68deg);
     }
 
-
+  #game-wrap .fish-score .sailor_cap{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    background: transparent url('../img/score/sailor/cap.png');
+    z-index: 2;
+  }
+  
+  #game-wrap .fish-score .sailor_felt-boots{
+    width: 17px; 
+    height: 15px;
+    position: absolute;
+    left: 81px;
+    top: 13px;
+    background: transparent url('../img/score/sailor/felt_boots.png');
+    z-index: 2 ;
+  }
+  
+  #game-wrap .fish-score .sailor_felt-boots-2{
+    width: 17px;
+    height: 15px;
+    position: absolute;
+    left: 80px;
+    top: 14px;
+    background: transparent url('../img/score/sailor/felt_boots_2.png');
+  } 
+  #game-wrap .fish-score .sailor_vest{
+    width: 42px;
+    height: 19px;
+    position: absolute;
+    left: 23px;
+    top: 10px;
+    background: transparent url('../img/score/sailor/vest.png');
+    z-index: 1;
+  }
+  #game-wrap .fish-score .sailor_whisker{
+    width: 7px;
+    height: 2px;
+    position: absolute;
+    left: 3px;
+    top: 21px;
+    background: transparent url('../img/score/sailor/whisker.png');
+  }
 
   #game-wrap #score {
     position: absolute;
