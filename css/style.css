@@ -75,20 +75,20 @@ h3 {
 }
 
 #game-wrap {
-	width: 572px;
-  height: 350px;
+	width: 1250px;
+  height: 765px;
   margin: 0 auto;
-  background: transparent url('../img/game-bg.jpg') center center no-repeat;
+  background: transparent url('../img/game-bg.svg') center center no-repeat;
   position: relative;
 }
 
 #game-wrap .fish-score {
-  width: 103px;
-  height: 33px;
+  width: 225px;
+  height: 73px;
   position: absolute;
-  background: transparent url('../img/score/fish_score.png') center center no-repeat;
-  top:30px;
-  left:70px;
+  background: transparent url('../img/score/fish_score.svg') center center no-repeat;
+  top:80px;
+  left:80px;
 
 }
 
@@ -101,32 +101,24 @@ h3 {
     position: absolute;
   }
     #game-wrap[data-bx="0"][data-by="1"] .basket {
-      width: 225px;
-      height: 184px;
-      background: transparent url('../img/basket/basket-p-0-1.png') left top no-repeat;
-      top: 158px;
-      left: 126px;
+      width: 1250px;
+      height: 765px;
+      background: transparent url('../img/basket/basket-p-0-1.svg') left top no-repeat;
     }
     #game-wrap[data-bx="1"][data-by="1"] .basket {
-      width: 225px;
-      height: 184px;
-      background: transparent url('../img/basket/basket-p-1-1.png') right top no-repeat;
-      top: 165px;
-      right: 123px;
+      width: 1250px;
+      height: 765px;
+      background: transparent url('../img/basket/basket-p-1-1.svg') right top no-repeat;
     }
     #game-wrap[data-bx="0"][data-by="0"] .basket {
-      width: 256px;
-      height: 116px;
-      background: transparent url('../img/basket/basket-p-0-0.png') left top no-repeat;
-      left: 124px;
-      bottom: 0px;
+      width: 1250px;
+      height: 765px;
+      background: transparent url('../img/basket/basket-p-0-0.svg') left top no-repeat;
     }
     #game-wrap[data-bx="1"][data-by="0"] .basket {
-      width: 256px;
-      height: 110px;
-      background: transparent url('../img/basket/basket-p-1-0.png') right top no-repeat;
-      right: 126px;
-      bottom: 0px;
+      width: 1250px;
+      height: 765px;
+      background: transparent url('../img/basket/basket-p-1-0.svg') right top no-repeat;
     }
   
     /*
@@ -134,11 +126,11 @@ h3 {
     */
     #game-wrap .wave {
       z-index: 10;
-      width: 572px;
-      height: 58px;
+      width: 1250px;
+      height: 127px;
       position: absolute;
-      top: 292px;
-      background: transparent url('../img/wave.png') top center no-repeat;
+      top: 638px;
+      background: transparent url('../img/wave.svg') top center no-repeat;
       animation-duration: 5s;
       animation-name: waves;
       animation-iteration-count: infinite;
@@ -150,105 +142,105 @@ h3 {
    * Egg
    */
   #game-wrap .egg {
-    width: 15px;
-    height: 15px;
-    background: transparent url('../img/egg/egg.png') center center no-repeat;
+    width: 30px;
+    height: 30px;
+    background: transparent url('../img/egg/egg.svg') center center no-repeat;
     position: absolute;
   }
   #game-wrap .egg.cloth {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     position: absolute;
   }
     #game-wrap .egg.cloth.sailor_cap {
-      background: transparent url('../img/egg/sailor/cap.png') left top no-repeat !important;
+      background: transparent url('../img/egg/sailor/cap.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.sailor_felt-boots {
-      background: transparent url('../img/egg/sailor/felt_boots.png') left top no-repeat !important;
+      background: transparent url('../img/egg/sailor/felt_boots.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.sailor_felt-boots-2 {
-      background: transparent url('../img/egg/sailor/felt_boots_2.png') left top no-repeat !important;
+      background: transparent url('../img/egg/sailor/felt_boots_2.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.sailor_vest {
-      background: transparent url('../img/egg/sailor/vest.png') left top no-repeat !important;
+      background: transparent url('../img/egg/sailor/vest.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.sailor_whisker {
-      background: transparent url('../img/egg/sailor/whisker.png') left top no-repeat !important;
+      background: transparent url('../img/egg/sailor/whisker.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.girl_boot-1 {
-      background: transparent url('../img/egg/girl/boot_1.png') left top no-repeat !important;
+      background: transparent url('../img/egg/girl/boot_1.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.girl_boot-2 {
-      background: transparent url('../img/egg/girl/boot_2.png') left top no-repeat !important;
+      background: transparent url('../img/egg/girl/boot_2.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.girl_tors-1 {
-      background: transparent url('../img/egg/girl/tors_1.png') left top no-repeat !important;
+      background: transparent url('../img/egg/girl/tors_1.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.girl_tors-2 {
-      background: transparent url('../img/egg/girl/tors_2.png') left top no-repeat !important;
+      background: transparent url('../img/egg/girl/tors_2.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.girl_tors-3 {
-      background: transparent url('../img/egg/girl/tors_3.png') left top no-repeat !important;
+      background: transparent url('../img/egg/girl/tors_3.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.zenit_hat {
-      background: transparent url('../img/egg/zenit/hat.png') left top no-repeat !important;
+      background: transparent url('../img/egg/zenit/hat.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.zenit_hat-2 {
-      background: transparent url('../img/egg/zenit/hat_2.png') left top no-repeat !important;
+      background: transparent url('../img/egg/zenit/hat_2.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.zenit_moustache {
-      background: transparent url('../img/egg/zenit/moustache.png') left top no-repeat !important;
+      background: transparent url('../img/egg/zenit/moustache.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.zenit_scarf {
-      background: transparent url('../img/egg/zenit/scarf.png') left top no-repeat !important;
+      background: transparent url('../img/egg/zenit/scarf.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.zenit_scarf-text {
-      background: transparent url('../img/egg/zenit/scarf_text.png') left top no-repeat !important;
+      background: transparent url('../img/egg/zenit/scarf_text.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.woman_dress {
-      background: transparent url('../img/egg/woman/dress.png') left top no-repeat !important;
+      background: transparent url('../img/egg/woman/dress.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.woman_head {
-      background: transparent url('../img/egg/woman/head.png') left top no-repeat !important;
+      background: transparent url('../img/egg/woman/head.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.woman_lips {
-      background: transparent url('../img/egg/woman/lips.png') left top no-repeat !important;
+      background: transparent url('../img/egg/woman/lips.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.woman_pot {
-      background: transparent url('../img/egg/woman/pot.png') left top no-repeat !important;
+      background: transparent url('../img/egg/woman/pot.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.woman_raincoat {
-      background: transparent url('../img/egg/woman/raincoat.png') left top no-repeat !important;
+      background: transparent url('../img/egg/woman/raincoat.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.oldman_glass-1 {
-      background: transparent url('../img/egg/oldman/glass-1.png') left top no-repeat !important;
+      background: transparent url('../img/egg/oldman/glass-1.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.oldman_glass-2 {
-      background: transparent url('../img/egg/oldman/glass-2.png') left top no-repeat !important;
+      background: transparent url('../img/egg/oldman/glass-2.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.oldman_hair {
-      background: transparent url('../img/egg/oldman/hair.png') left top no-repeat !important;
+      background: transparent url('../img/egg/oldman/hair.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.oldman_moustache {
-      background: transparent url('../img/egg/oldman/moustache.png') left top no-repeat !important;
+      background: transparent url('../img/egg/oldman/moustache.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.oldman_stick {
-      background: transparent url('../img/egg/oldman/stick.png') left top no-repeat !important;
+      background: transparent url('../img/egg/oldman/stick.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.granny_glass {
-      background: transparent url('../img/egg/granny/glass.png') left top no-repeat !important;
+      background: transparent url('../img/egg/granny/glass.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.granny_hair {
-      background: transparent url('../img/egg/granny/hair.png') left top no-repeat !important;
+      background: transparent url('../img/egg/granny/hair.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.granny_scarf {
-      background: transparent url('../img/egg/granny/scarf.png') left top no-repeat !important;
+      background: transparent url('../img/egg/granny/scarf.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.granny_spokes {
-      background: transparent url('../img/egg/granny/spokes.png') left top no-repeat !important;
+      background: transparent url('../img/egg/granny/spokes.svg') left top no-repeat !important;
     }
     #game-wrap .egg.cloth.granny_tangle {
-      background: transparent url('../img/egg/granny/tangle.png') left top no-repeat !important;
+      background: transparent url('../img/egg/granny/tangle.svg') left top no-repeat !important;
     }
     #game-wrap[data-egg-0="0"] .egg.e-0,
     #game-wrap[data-egg-1="0"] .egg.e-1,
@@ -259,8 +251,8 @@ h3 {
 
     /* Egg bottom-left */
     #game-wrap[data-egg-0="1"] .egg.e-0 {
-      top: 195px;
-      left: 47px;
+      top: 423px;
+      left: 80px;
       -moz-transform:rotate(65deg);
       -webkit-transform:rotate(65deg);
       -o-transform:rotate(65deg);
@@ -268,8 +260,8 @@ h3 {
       transform: rotate(65deg);
     }
     #game-wrap[data-egg-0="2"] .egg.e-0 {
-      top: 205px;
-      left: 62px;
+      top: 450px;
+      left: 130px;
       -moz-transform:rotate(118deg);
       -webkit-transform:rotate(118deg);
       -o-transform:rotate(118deg);
@@ -277,8 +269,8 @@ h3 {
       transform: rotate(118deg);
     }
     #game-wrap[data-egg-0="3"] .egg.e-0 {
-      top: 215px;
-      left: 79px;
+      top: 477px;
+      left: 180px;
       -moz-transform:rotate(162deg);
       -webkit-transform:rotate(162deg);
       -o-transform:rotate(162deg);
@@ -286,8 +278,8 @@ h3 {
       transform: rotate(162deg);
     }
     #game-wrap[data-egg-0="4"] .egg.e-0 {
-      top: 223px;
-      left: 96px;
+      top: 505px;
+      left: 230px;
       -moz-transform:rotate(-93deg);
       -webkit-transform:rotate(-93deg);
       -o-transform:rotate(-93deg);
@@ -295,8 +287,8 @@ h3 {
       transform: rotate(-93deg);
     }
     #game-wrap[data-egg-0="5"] .egg.e-0 {
-      top: 235px;
-      left: 108px;
+      top: 534px;
+      left: 278px;
       -moz-transform:rotate(-7deg);
       -webkit-transform:rotate(-7deg);
       -o-transform:rotate(-7deg);
@@ -306,8 +298,8 @@ h3 {
 
     /* Egg top-left */
     #game-wrap[data-egg-1="1"] .egg.e-1 {
-      top: 122px;
-      left: 47px;
+      top: 260px;
+      left: 80px;
       -moz-transform:rotate(56deg);
       -webkit-transform:rotate(56deg);
       -o-transform:rotate(56deg);
@@ -315,8 +307,8 @@ h3 {
       transform: rotate(56deg);
     }
     #game-wrap[data-egg-1="2"] .egg.e-1 {
-      top: 132px;
-      left: 62px;
+      top: 287px;
+      left: 130px;
       -moz-transform:rotate(108deg);
       -webkit-transform:rotate(108deg);
       -o-transform:rotate(108deg);
@@ -324,8 +316,8 @@ h3 {
       transform: rotate(108deg);
     }
     #game-wrap[data-egg-1="3"] .egg.e-1 {
-      top: 142px;
-      left: 80px;
+      top: 314px;
+      left: 180px;
       -moz-transform:rotate(192deg);
       -webkit-transform:rotate(192deg);
       -o-transform:rotate(192deg);
@@ -333,8 +325,8 @@ h3 {
       transform: rotate(192deg);
     }
     #game-wrap[data-egg-1="4"] .egg.e-1 {
-      top: 151px;
-      left: 95px;
+      top: 342px;
+      left: 230px;
       -moz-transform:rotate(-62deg);
       -webkit-transform:rotate(-62deg);
       -o-transform:rotate(-62deg);
@@ -342,14 +334,14 @@ h3 {
       transform: rotate(-62deg);
     }
     #game-wrap[data-egg-1="5"] .egg.e-1 {
-      top: 160px;
-      left: 110px;
+      top: 372px;
+      left: 278px;
     }
 
     /* Egg top-right */
     #game-wrap[data-egg-2="1"] .egg.e-2 {
-      top: 122px;
-      right: 51px;
+      top: 260px;
+      right: 80px;
       -moz-transform:rotate(-10deg);
       -webkit-transform:rotate(-10deg);
       -o-transform:rotate(-10deg);
@@ -357,8 +349,8 @@ h3 {
       transform: rotate(-10deg);
     }
     #game-wrap[data-egg-2="2"] .egg.e-2 {
-      top: 132px;
-      right: 66px;
+      top: 287px;
+      right: 130px;
       -moz-transform:rotate(-56deg);
       -webkit-transform:rotate(-56deg);
       -o-transform:rotate(-56deg);
@@ -366,8 +358,8 @@ h3 {
       transform: rotate(-56deg);
     }
     #game-wrap[data-egg-2="3"] .egg.e-2 {
-      top: 142px;
-      right: 84px;
+      top: 314px;
+      right: 180px;
       -moz-transform:rotate(-128deg);
       -webkit-transform:rotate(-128deg);
       -o-transform:rotate(-128deg);
@@ -375,8 +367,8 @@ h3 {
       transform: rotate(-128deg);
     }
     #game-wrap[data-egg-2="4"] .egg.e-2 {
-      top: 149px;
-      right: 99px;
+      top: 342px;
+      right: 230px;
       -moz-transform:rotate(140deg);
       -webkit-transform:rotate(140deg);
       -o-transform:rotate(140deg);
@@ -384,8 +376,8 @@ h3 {
       transform: rotate(140deg);
     }
     #game-wrap[data-egg-2="5"] .egg.e-2 {
-      top: 160px;
-      right: 113px;
+      top: 372px;
+      right: 278px;
       -moz-transform:rotate(58deg);
       -webkit-transform:rotate(58deg);
       -o-transform:rotate(58deg);
@@ -395,8 +387,8 @@ h3 {
 
     /* Egg bottom-right */
     #game-wrap[data-egg-3="1"] .egg.e-3 {
-      top: 195px;
-      right: 50px;
+      top: 423px;
+      right: 80px;
       -moz-transform:rotate(-14deg);
       -webkit-transform:rotate(-14deg);
       -o-transform:rotate(-14deg);
@@ -404,8 +396,8 @@ h3 {
       transform: rotate(-14deg);
     }
     #game-wrap[data-egg-3="2"] .egg.e-3 {
-      top: 204px;
-      right: 66px;
+      top: 450px;
+      right: 130px;
       -moz-transform:rotate(-53deg);
       -webkit-transform:rotate(-53deg);
       -o-transform:rotate(-53deg);
@@ -413,8 +405,8 @@ h3 {
       transform: rotate(-53deg);
     }
     #game-wrap[data-egg-3="3"] .egg.e-3 {
-      top: 215px;
-      right: 83px;
+      top: 477px;
+      right: 180px;
       -moz-transform:rotate(-96deg);
       -webkit-transform:rotate(-96deg);
       -o-transform:rotate(-96deg);
@@ -422,8 +414,8 @@ h3 {
       transform: rotate(-96deg);
     }
     #game-wrap[data-egg-3="4"] .egg.e-3 {
-      top: 223px;
-      right: 100px;
+      top: 505px;
+      right: 230px;
       -moz-transform:rotate(152deg);
       -webkit-transform:rotate(152deg);
       -o-transform:rotate(152deg);
@@ -431,8 +423,8 @@ h3 {
       transform: rotate(152deg);
     }
     #game-wrap[data-egg-3="5"] .egg.e-3 {
-      top: 235px;
-      right: 112px;
+      top: 524px;
+      right: 278px;
       -moz-transform:rotate(68deg);
       -webkit-transform:rotate(68deg);
       -o-transform:rotate(68deg);
@@ -443,8 +435,8 @@ h3 {
     /*ОДЕЖДА*/
     /* Egg bottom-left */
     #game-wrap[data-egg-0="1"] .egg.e-0.cloth {
-      top: 175px;
-      left: 26px;
+      top: 397px;
+      left: 65px;
       -moz-transform:rotate(65deg);
       -webkit-transform:rotate(65deg);
       -o-transform:rotate(65deg);
@@ -452,8 +444,8 @@ h3 {
       transform: rotate(65deg);
     }
     #game-wrap[data-egg-0="2"] .egg.e-0.cloth {
-      top: 186px;
-      left: 46px;
+      top: 424px;
+      left: 115px;
       -moz-transform:rotate(118deg);
       -webkit-transform:rotate(118deg);
       -o-transform:rotate(118deg);
@@ -461,8 +453,8 @@ h3 {
       transform: rotate(118deg);
     }
     #game-wrap[data-egg-0="3"] .egg.e-0.cloth {
-      top: 197px;
-      left: 66px;
+      top: 451px;
+      left: 165px;
       -moz-transform:rotate(162deg);
       -webkit-transform:rotate(162deg);
       -o-transform:rotate(162deg);
@@ -470,8 +462,8 @@ h3 {
       transform: rotate(162deg);
     }
     #game-wrap[data-egg-0="4"] .egg.e-0.cloth {
-      top: 208px;
-      left: 86px;
+      top: 479px;
+      left: 215px;
       -moz-transform:rotate(-93deg);
       -webkit-transform:rotate(-93deg);
       -o-transform:rotate(-93deg);
@@ -479,8 +471,8 @@ h3 {
       transform: rotate(-93deg);
     }
     #game-wrap[data-egg-0="5"] .egg.e-0.cloth {
-      top: 217px;
-      left: 100px;
+      top: 510px;
+      left: 258px;
       -moz-transform:rotate(-7deg);
       -webkit-transform:rotate(-7deg);
       -o-transform:rotate(-7deg);
@@ -490,8 +482,8 @@ h3 {
 
     /* Egg top-left */
     #game-wrap[data-egg-1="1"] .egg.e-1.cloth {
-      top: 100px;
-      left: 26px;
+      top: 234px;
+      left: 65px;
       -moz-transform:rotate(56deg);
       -webkit-transform:rotate(56deg);
       -o-transform:rotate(56deg);
@@ -499,8 +491,8 @@ h3 {
       transform: rotate(56deg);
     }
     #game-wrap[data-egg-1="2"] .egg.e-1.cloth {
-      top: 111px;
-      left: 46px;
+      top: 261px;
+      left: 115px;
       -moz-transform:rotate(108deg);
       -webkit-transform:rotate(108deg);
       -o-transform:rotate(108deg);
@@ -508,8 +500,8 @@ h3 {
       transform: rotate(108deg);
     }
     #game-wrap[data-egg-1="3"] .egg.e-1.cloth {
-      top: 122px;
-      left: 66px;
+      top: 288px;
+      left: 165px;
       -moz-transform:rotate(192deg);
       -webkit-transform:rotate(192deg);
       -o-transform:rotate(192deg);
@@ -517,8 +509,8 @@ h3 {
       transform: rotate(192deg);
     }
     #game-wrap[data-egg-1="4"] .egg.e-1.cloth {
-      top: 133px;
-      left: 86px;
+      top: 316px;
+      left: 215px;
       -moz-transform:rotate(-62deg);
       -webkit-transform:rotate(-62deg);
       -o-transform:rotate(-62deg);
@@ -526,14 +518,14 @@ h3 {
       transform: rotate(-62deg);
     }
     #game-wrap[data-egg-1="5"] .egg.e-1.cloth {
-      top: 142px;
-      left: 100px;
+      top: 347px;
+      left: 258px;
     }
 
     /* Egg top-right */
     #game-wrap[data-egg-2="1"] .egg.e-2.cloth {
-      top: 100px;
-      right: 26px;
+      top: 234px;
+      right: 65px;
       -moz-transform:rotate(-10deg);
       -webkit-transform:rotate(-10deg);
       -o-transform:rotate(-10deg);
@@ -541,8 +533,8 @@ h3 {
       transform: rotate(-10deg);
     }
     #game-wrap[data-egg-2="2"] .egg.e-2.cloth {
-      top: 111px;
-      right: 46px;
+      top: 261px;
+      right: 115px;
       -moz-transform:rotate(-56deg);
       -webkit-transform:rotate(-56deg);
       -o-transform:rotate(-56deg);
@@ -550,8 +542,8 @@ h3 {
       transform: rotate(-56deg);
     }
     #game-wrap[data-egg-2="3"] .egg.e-2.cloth {
-      top: 122px;
-      right: 66px;
+      top: 288px;
+      right: 165px;
       -moz-transform:rotate(-128deg);
       -webkit-transform:rotate(-128deg);
       -o-transform:rotate(-128deg);
@@ -559,8 +551,8 @@ h3 {
       transform: rotate(-128deg);
     }
     #game-wrap[data-egg-2="4"] .egg.e-2.cloth {
-      top: 133px;
-      right: 86px;
+      top: 316px;
+      right: 215px;
       -moz-transform:rotate(140deg);
       -webkit-transform:rotate(140deg);
       -o-transform:rotate(140deg);
@@ -568,8 +560,8 @@ h3 {
       transform: rotate(140deg);
     }
     #game-wrap[data-egg-2="5"] .egg.e-2.cloth {
-      top: 142px;
-      right: 100px;
+      top: 347px;
+      right: 258px;
       -moz-transform:rotate(58deg);
       -webkit-transform:rotate(58deg);
       -o-transform:rotate(58deg);
@@ -579,8 +571,8 @@ h3 {
 
     /* Egg bottom-right */
     #game-wrap[data-egg-3="1"] .egg.e-3.cloth{
-      top: 175px;
-      right: 26px;
+      top: 397px;
+      right: 65px;
       -moz-transform:rotate(-14deg);
       -webkit-transform:rotate(-14deg);
       -o-transform:rotate(-14deg);
@@ -588,8 +580,8 @@ h3 {
       transform: rotate(-14deg);
     }
     #game-wrap[data-egg-3="2"] .egg.e-3.cloth {
-      top: 186px;
-      right: 46px;
+      top: 424px;
+      right: 115px;
       -moz-transform:rotate(-53deg);
       -webkit-transform:rotate(-53deg);
       -o-transform:rotate(-53deg);
@@ -597,8 +589,8 @@ h3 {
       transform: rotate(-53deg);
     }
     #game-wrap[data-egg-3="3"] .egg.e-3.cloth {
-      top: 197px;
-      right: 66px;
+      top: 451px;
+      right: 165px;
       -moz-transform:rotate(-96deg);
       -webkit-transform:rotate(-96deg);
       -o-transform:rotate(-96deg);
@@ -606,8 +598,8 @@ h3 {
       transform: rotate(-96deg);
     }
     #game-wrap[data-egg-3="4"] .egg.e-3.cloth {
-      top: 208px;
-      right: 86px;
+      top: 479px;
+      right: 215px;
       -moz-transform:rotate(152deg);
       -webkit-transform:rotate(152deg);
       -o-transform:rotate(152deg);
@@ -615,8 +607,8 @@ h3 {
       transform: rotate(152deg);
     }
     #game-wrap[data-egg-3="5"] .egg.e-3.cloth {
-      top: 217px;
-      right: 100px;
+      top: 510px;
+      right: 258px;
       -moz-transform:rotate(68deg);
       -webkit-transform:rotate(68deg);
       -o-transform:rotate(68deg);
@@ -628,49 +620,39 @@ h3 {
   /*Моряк*/
 
   #game-wrap .fish-score .sailor_cap{
-    width: 23px;
-    height: 23px;
+    width: 225px; 
+    height: 73px;
     position: absolute;
-    left: 3px;
-    top: 7px;
-    background: transparent url('../img/score/sailor/cap.png');
+    background: transparent url('../img/score/sailor/cap.svg');
     z-index: 2;
   }
   
   #game-wrap .fish-score .sailor_felt-boots{
-    width: 17px; 
-    height: 15px;
+    width: 225px; 
+    height: 73px;
     position: absolute;
-    left: 81px;
-    top: 13px;
-    background: transparent url('../img/score/sailor/felt_boots.png');
+    background: transparent url('../img/score/sailor/felt_boots.svg');
     z-index: 2 ;
   }
   
   #game-wrap .fish-score .sailor_felt-boots-2{
-    width: 17px;
-    height: 15px;
+    width: 225px; 
+    height: 73px;
     position: absolute;
-    left: 80px;
-    top: 14px;
-    background: transparent url('../img/score/sailor/felt_boots_2.png');
+    background: transparent url('../img/score/sailor/felt_boots_2.svg');
   } 
   #game-wrap .fish-score .sailor_vest{
-    width: 42px;
-    height: 19px;
+    width: 225px; 
+    height: 73px;
     position: absolute;
-    left: 23px;
-    top: 10px;
-    background: transparent url('../img/score/sailor/vest.png');
+    background: transparent url('../img/score/sailor/vest.svg');
     z-index: 1;
   }
   #game-wrap .fish-score .sailor_whisker{
-    width: 7px;
-    height: 2px;
+    width: 225px; 
+    height: 73px;
     position: absolute;
-    left: 3px;
-    top: 21px;
-    background: transparent url('../img/score/sailor/whisker.png');
+    background: transparent url('../img/score/sailor/whisker.svg') no-repeat;
   }
 
   /*Девочка*/
@@ -722,6 +704,7 @@ h3 {
   }
 
   #game-wrap #score {
+    display: none;
     position: absolute;
     top: 48px;
     left: 326px;
@@ -782,34 +765,34 @@ h3 {
 
 
   #game-wrap .lives {
-    width: 114px;
-    height: 32px;
-    background: transparent url('../img/loss/live.png') left top no-repeat;
+    width: 192px;
+    height: 76px;
+    background: transparent url('../img/loss/live.svg') left top no-repeat;
     position: absolute;
-    top: 114px;
-    left: 326px;
+    top: 85px;
+    left: 978px;
   }
       
   #game-wrap #loss {
     z-index: 5;
-    width: 114px;
-    height: 32px;
-    background: transparent url('../img/loss/loss.png') left top no-repeat;
+    width: 192px;
+    height: 76px;
+    background: transparent url('../img/loss/loss.svg') left top no-repeat;
     position: absolute;
-    top: 114px;
-    left: 326px;
+    top: 85px;
+    left: 978px;
   }
     #game-wrap[data-loss="0"] #loss {
       width: 0;
     }
     #game-wrap[data-loss="1"] #loss {
-      width: 40px;
+      width: 60px;
     }
     #game-wrap[data-loss="2"] #loss {
-      width: 80px;
+      width: 128px;
     }
     #game-wrap[data-loss="3"] #loss {
-      width: 120px;
+      width: 192px;
     }
 
   #game-wrap .more-info {
