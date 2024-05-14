@@ -623,6 +623,9 @@ h3 {
       -ms-transform:rotate(68deg);
       transform: rotate(68deg);
     }
+  /*Одежда на рыбке*/
+  
+  /*Моряк*/
 
   #game-wrap .fish-score .sailor_cap{
     width: 23px;
@@ -668,6 +671,54 @@ h3 {
     left: 3px;
     top: 21px;
     background: transparent url('../img/score/sailor/whisker.png');
+  }
+
+  /*Девочка*/
+  
+  #game-wrap .fish-score .girl_boot-1{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    background: transparent url('../img/score/girl/boot_1.png');
+    z-index: 2;
+  }
+  
+  #game-wrap .fish-score .girl_boot-2{
+    width: 17px; 
+    height: 15px;
+    position: absolute;
+    left: 81px;
+    top: 13px;
+    background: transparent url('../img/score/girl/boot_2.png');
+    z-index: 2 ;
+  }
+  
+  #game-wrap .fish-score .girl_tors-1{
+    width: 17px;
+    height: 15px;
+    position: absolute;
+    left: 80px;
+    top: 14px;
+    background: transparent url('../img/score/girl/tors_1.png');
+  } 
+  #game-wrap .fish-score .girl_tors-2{
+    width: 42px;
+    height: 19px;
+    position: absolute;
+    left: 23px;
+    top: 10px;
+    background: transparent url('../img/score/girl/tors_2.png');
+    z-index: 1;
+  }
+  #game-wrap .fish-score .girl_tors-3{
+    width: 7px;
+    height: 2px;
+    position: absolute;
+    left: 3px;
+    top: 21px;
+    background: transparent url('../img/score/girl/tors_3.png');
   }
 
   #game-wrap #score {
