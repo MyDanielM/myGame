@@ -143,32 +143,40 @@ GameManager.prototype.updateScore = function (data) {
   var currentClass = "egg e-"+data.egg;
   var egg = document.getElementsByClassName(currentClass);
   //Жизни уходят если ловишь одежду
-  if (egg[0].classList.contains("cloth") && this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y){
-    // Дописать логику одевания рыбки
+  if (egg[0].classList.contains("cloth") && !(this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y)){
+    console.log("Не поймал "+ egg[0].classList[3])
+    
     var baseClass = "egg e-"+data.egg;
     egg[0].className = baseClass;
-    console.log("Поймал одежду!")
-  } else {
-    if (this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y) {
-      this.score += this.point;
-      this.HTMLredraw.updateScore({ value: this.score });
-      
-      if (this.score >= 1000) {
-        this.gameWin();
-        return false;
-      }
-  
-      if (!(this.score % 50)) {
-        this.upLevel();
-      }
-    } else {
-      this.loss++;
-      this.HTMLredraw.updateLossCount({ loss: this.loss });
-      if (this.loss > 2 && !this.over) {
-        this.gameOver();
-      }
-    }  
+    return;
   }
+  if (egg[0].classList.contains("cloth") && this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y){
+    
+    console.log("Поймал одежду "+egg[0].classList[3])
+    // Дописать логику одевания рыбки
+    
+    var baseClass = "egg e-"+data.egg;
+    egg[0].className = baseClass;
+    return;
+  }
+  if (this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y) {
+    this.score += this.point;
+    this.HTMLredraw.updateScore({ value: this.score });
+    if (this.score >= 1000) {
+      this.gameWin();
+      return false;
+    }
+  
+    if (!(this.score % 50)) {
+      this.upLevel();
+    }
+  } else {
+    this.loss++;
+    this.HTMLredraw.updateLossCount({ loss: this.loss });
+    if (this.loss > 2 && !this.over) {
+      this.gameOver();
+    }
+  }  
 };
 
 GameManager.prototype.findAvailableChicken = function() {
