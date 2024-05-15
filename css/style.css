@@ -914,13 +914,13 @@ body.is-mobile {
   }
 }
 
-@media only screen and (width: 780px) {
+@media only screen and (width: 806px) {
   .page {
     width: 100%;
     height: 100%;
   }
   #game-wrap {
-    transform: scale(0.45) translate(9%, -15%);
+    transform: scale(0.45) translate(4%, -20%);
     transform-origin: left top;
   }
  
