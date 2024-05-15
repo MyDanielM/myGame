@@ -39,6 +39,7 @@ h3 {
   min-width: 640px;
   min-height: 100%;
   margin: 0 auto -40px;
+  background: #564e47;
   text-align: center;
   overflow: hidden;
 }
@@ -77,7 +78,7 @@ h3 {
 #game-wrap {
 	width: 1250px;
   height: 765px;
-  margin: 0 auto;
+  margin: 13%;
   background: transparent url('../img/game-bg.svg') center center no-repeat;
   position: relative;
 }

@@ -203,7 +203,6 @@ GameManager.prototype.runEgg = function(chicken) {
     var egg = document.getElementsByClassName(currentClass);
     egg[0].className += ' cloth';
     var arr = getRandomInt(this.cloth.length-1);
-    arr = 0
     var index = getRandomInt(this.cloth[arr].length-1);
     var type;
     switch (arr){
