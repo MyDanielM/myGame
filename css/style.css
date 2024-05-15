@@ -855,9 +855,9 @@ h3 {
 
   #controls {
     width: 100%;
-    height: 155px;
+    height: 240px;
     position: absolute;
-    bottom: 100px;
+    bottom: 270px;
   }
     #controls a {
       width: 80px;
@@ -941,12 +941,16 @@ body.is-mobile {
     font-size: 36px;
     line-height: 2em;
   }
+  #game-wrap {
+    transform: scale(0.5) translate(-4.5%, 15%);
+    transform-origin: left top;
+  }
   #game-wrap .more-info a.source-code {
     padding: 0 90px 0 0;
     background-position: right top;
   }
   #game-wrap .more-info {
-    bottom: -40px;
+    display: none;
   }
     #game-wrap .more-info .how-to-play {
       display: none;
@@ -955,9 +959,9 @@ body.is-mobile {
     margin-top: 20px;
   }
   #controls a[data-x="0"] {
-    left: -34px;
+    left: -75px;
   }
   #controls a[data-x="1"] {
-    right: -34px;
+    right: -75px;
   }
 }
