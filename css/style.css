@@ -890,19 +890,6 @@ h3 {
 body.is-mobile {
 
 }
-  body.is-mobile .page a.logo {
-    margin-top: 5%;
-  }
-  body.is-mobile .more-info a.source-code {
-    padding: 0 90px 0 0;
-    background-position: right top !important;
-  }
-  body.is-mobile #game-wrap .more-info .how-to-play {
-    display: none;
-  }
-  body.is-mobile .more-info a.restart-game {
-    float: right;
-  }
   body:not(.is-mobile) #controls,
   body:not(.is-mobile) .more-info a.restart-game {
     display: none;
@@ -915,7 +902,7 @@ body.is-mobile {
     height: 100%;
   }
   #game-wrap {
-    transform: scale(0.5) translate(7%, -25%);
+    transform: scale(0.5) translate(8%, -14%);
     transform-origin: left top;
   }
  
@@ -933,7 +920,7 @@ body.is-mobile {
     height: 100%;
   }
   #game-wrap {
-    transform: scale(0.45) translate(2.5%, -25%);
+    transform: scale(0.45) translate(9%, -15%);
     transform-origin: left top;
   }
  
@@ -992,7 +979,7 @@ body.is-mobile {
     height: 100%;
   }
   #game-wrap {
-    transform: scale(0.45) translate(-5%, -20%);
+    transform: scale(0.4) translate(-1%, -5%);
     transform-origin: left top;
   }
  
