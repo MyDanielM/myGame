@@ -909,31 +909,41 @@ body.is-mobile {
   }
 
 
-@media only screen and (max-width: 1024px) {
-  #game-wrap .more-info {
+@media only screen and (max-width: 986px) {
+  .page{
     width: 100%;
-    height: auto;
-    top: auto;
-    right: 0;
-    bottom: -80px;
+    height: 100%;
   }
-    #game-wrap .more-info a.source-code,
-    #game-wrap .more-info .how-to-play {
-      width: auto;
-    }
-    #game-wrap .more-info a.source-code {
-      float: left;
-    }
-    #game-wrap .more-info .how-to-play {
-      float: right;
-      position: relative;
-    }
+  #game-wrap {
+    transform: scale(0.5) translate(7%, -25%);
+    transform-origin: left top;
+  }
+ 
+  #controls a[data-x="0"] {
+    left: -75px;
+  }
+  #controls a[data-x="1"] {
+    right: -75px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .page {
-    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
   }
+  #game-wrap {
+    transform: scale(0.5) translate(-4.5%, -20%);
+    transform-origin: left top;
+  }
+ 
+  #controls a[data-x="0"] {
+    left: -75px;
+  }
+  #controls a[data-x="1"] {
+    right: -75px;
+  }
+  /*
   .page a.logo {
     margin: 4% 0 0 0;
     padding-top: 0;
@@ -941,11 +951,7 @@ body.is-mobile {
     font-size: 36px;
     line-height: 2em;
   }
-  #game-wrap {
-    transform: scale(0.5) translate(-4.5%, 15%);
-    transform-origin: left top;
-  }
-  #game-wrap .more-info a.source-code {
+   #game-wrap .more-info a.source-code {
     padding: 0 90px 0 0;
     background-position: right top;
   }
@@ -958,6 +964,20 @@ body.is-mobile {
   .footer {
     margin-top: 20px;
   }
+  */
+  
+}
+
+@media only screen and (max-width: 667px) {
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+  #game-wrap {
+    transform: scale(0.45) translate(-5%, -20%);
+    transform-origin: left top;
+  }
+ 
   #controls a[data-x="0"] {
     left: -75px;
   }
