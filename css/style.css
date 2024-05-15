@@ -938,7 +938,7 @@ body.is-mobile {
     height: 100%;
   }
   #game-wrap {
-    transform: scale(0.5) translate(-4.5%, -20%);
+    transform: scale(0.45) translate(0%, -28%);
     transform-origin: left top;
   }
  
