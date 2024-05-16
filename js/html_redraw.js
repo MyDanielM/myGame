@@ -51,17 +51,16 @@ HTMLredraw.prototype.updateLossCount = function(data) {
 };
 
 HTMLredraw.prototype.gameOver = function() {
-  var msg = this.getMessage('Game Over');
-
+  this.messageWrap.classList.add("lose");
+  this.messageWrap.innerHTML += '<a href="../pages/game.html">'
   this.messageWrap.show();
-  this.messageWrap.appendChild(msg);
 };
 
 HTMLredraw.prototype.gameWin = function() {
-  var msg = this.getMessage('You\'ve Won!');
-
+  this.messageWrap.classList.add("win");
+  fish = document.getElementsByClassName("fish-score");
+  fish[0].classList+= " win"
   this.messageWrap.show();
-  this.messageWrap.appendChild(msg);
 };
 
 HTMLredraw.prototype.getMessage = function(message) {

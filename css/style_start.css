@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent url('../img/screens/start.svg') left top no-repeat;
+}
+
+.button{
+    margin-top: 38.5%;
+    width: 100%;
+    height: 242px;
+    background: transparent url('../img/screens/play.svg') center center no-repeat;
+    cursor: pointer;
+    display: block;
+}

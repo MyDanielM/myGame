@@ -90,7 +90,18 @@ h3 {
   background: transparent url('../img/score/fish_score.svg') center center no-repeat;
   top:67px;
   left:54px;
+}
 
+#game-wrap .fish-score.win {
+  width: 275px;
+  height: 98px;
+  position: absolute;
+  background: transparent url('../img/score/fish_score.svg') center center no-repeat;
+  top:67px;
+  left:54px;
+  z-index: 12;
+  transform: scale(3) translate(20%, 40%);
+  transform-origin: left top;
 }
 
   /*
@@ -979,26 +990,34 @@ h3 {
       bottom: 10px;
     }
 
-  #message {
+  #message.lose{
     z-index: 10;
     width: 100%;
     height: 100%;
-    background: transparent url('../img/game-over-bg.png');
+    background: transparent url('../img/screens/lose.svg');
     position: relative;
     display: none;
     overflow: hidden;
   }
-    #message > div {
-      margin-top: 134px;
-      padding: 5px 0 15px;
-      background: #353A53;
-      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    }
-      #message > div p {
-        font-size: 16px;
-      }
+
+  #message.win{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: transparent url('../img/screens/win.svg');
+    position: relative;
+    display: none;
+    overflow: hidden;
+  }
+  
+  #message.lose a{
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
 
   #game-wrap img {
   	vertical-align: top;
