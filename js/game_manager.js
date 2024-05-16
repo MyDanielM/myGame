@@ -32,8 +32,18 @@ GameManager.prototype.init = function () {
     ["hat","hat-2","moustache","scarf","scarf-text"],
     ["dress","head","lips","pot","raincoat"],
     ["glass-1","glass-2","hair","moustache","stick"],
-    ["glass","hair","scarf","soikes","tangle"]
+    ["glass","hair","scarf","spokes","tangle"]
   ];
+  /*
+  this.cloth = [
+    ["whisker_0", "cap_0","vest_1","felt-boots_2","felt-boots-2_2"],
+    ["tors-1_1","tors-2_1","tors-3_1","boot-1_2","boot-2_2"],
+    ["moustache_0", "hat_0","hat-2_0","scarf_1","scarf-text_1"],
+    ["lips_0", "head_0", "pot_1","raincoat_1","dress_1"],
+    ["glass-1_0","glass-2_0","hair_0","moustache_0","stick_1"],
+    ["glass_0","hair_0","scarf_1","soikes_1","tangle_1"]
+  ];
+*/  
 
   this.fishScore = []
 };
@@ -203,7 +213,6 @@ GameManager.prototype.runEgg = function(chicken) {
     var egg = document.getElementsByClassName(currentClass);
     egg[0].className += ' cloth';
     var arr = getRandomInt(this.cloth.length-1);
-    //var arr = 3;
     var index = getRandomInt(this.cloth[arr].length-1);
     var type;
     switch (arr){

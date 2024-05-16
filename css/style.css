@@ -737,7 +737,123 @@ h3 {
     z-index: 3;
   }
 
+  /*Фанат зенита*/
+  #game-wrap .fish-score .zenit_hat{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/zenit/hat.svg') no-repeat;
+    z-index: 2;
+  }
+  
+  #game-wrap .fish-score .zenit_hat-2{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/zenit/hat_2.svg') no-repeat;
+    z-index: 5;
+  }
+  
+  #game-wrap .fish-score .zenit_moustache{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/zenit/moustache.svg') no-repeat;
+    z-index: 2;
+  } 
+  #game-wrap .fish-score .zenit_scarf{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/zenit/scarf.svg') no-repeat;
+    z-index: 1;
+  }
+  #game-wrap .fish-score .zenit_scarf-text{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/zenit/scarf_text.svg') no-repeat;
+    z-index: 2;
+  }
 
+  /*Фрик какой-то*/
+  #game-wrap .fish-score .oldman_glass-1{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/oldman/glass_1.svg') no-repeat;
+    z-index: 5;
+  }
+  
+  #game-wrap .fish-score .oldman_glass-2{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/oldman/glass_2.svg') no-repeat;
+    z-index: 6;
+  }
+  
+  #game-wrap .fish-score .oldman_hair{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/oldman/hair.svg') no-repeat;
+    z-index: 2;
+  } 
+  #game-wrap .fish-score .oldman_moustache{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/oldman/moustache.svg') no-repeat;
+    z-index: 3;
+  }
+  #game-wrap .fish-score .oldman_stick{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/oldman/stick.svg') no-repeat;
+    z-index: 2;
+  }
+
+  /*Бабуля*/
+
+  #game-wrap .fish-score .granny_glass{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/granny/glass.svg') no-repeat;
+    z-index: 4;
+  }
+  
+  #game-wrap .fish-score .granny_hair{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/granny/hair.svg') no-repeat;
+    z-index: 4;
+  }
+  
+  #game-wrap .fish-score .granny_scarf{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/granny/scarf.svg') no-repeat;
+    z-index: 3;
+  } 
+  #game-wrap .fish-score .granny_spokes{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/granny/spokes.svg') no-repeat;
+    z-index: 3;
+  }
+  #game-wrap .fish-score .granny_tangle{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/granny/tangle.svg') no-repeat;
+    z-index: 2;
+  }
 
   #game-wrap #score {
     display: none;
