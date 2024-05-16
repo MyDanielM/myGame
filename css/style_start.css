@@ -17,8 +17,15 @@ a {
     min-width: 320px;
     max-width: 1920px;
     height: 100vh;
-    background: transparent url('../img/screens/start.svg') center top no-repeat;
+    
 }
+
+@media only screen and (max-width: 1600px){
+    .img {
+        background: transparent url('../img/screens/start.svg') center center no-repeat;
+    }
+}
+
 
 @media only screen and (max-width: 1024px){
     .img {
