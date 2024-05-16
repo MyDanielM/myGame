@@ -25,7 +25,7 @@ GameManager.prototype.init = function () {
   this.gameTimer;
 
   this.basketStartPosition = { x: 0, y: 1 };
-
+/*
   this.cloth = [
     ["cap","felt-boots","felt-boots-2","vest","whisker"],
     ["boot-1","boot-2","tors-1","tors-2","tors-3"],
@@ -34,16 +34,15 @@ GameManager.prototype.init = function () {
     ["glass-1","glass-2","hair","moustache","stick"],
     ["glass","hair","scarf","spokes","tangle"]
   ];
-  /*
+  */
   this.cloth = [
-    ["whisker_0", "cap_0","vest_1","felt-boots_2","felt-boots-2_2"],
-    ["tors-1_1","tors-2_1","tors-3_1","boot-1_2","boot-2_2"],
-    ["moustache_0", "hat_0","hat-2_0","scarf_1","scarf-text_1"],
-    ["lips_0", "head_0", "pot_1","raincoat_1","dress_1"],
-    ["glass-1_0","glass-2_0","hair_0","moustache_0","stick_1"],
-    ["glass_0","hair_0","scarf_1","soikes_1","tangle_1"]
-  ];
-*/  
+    ["whisker 3", "cap 3","vest 4","felt-boots 5","felt-boots-2 5"],
+    ["tors-1 4","tors-2 4","tors-3 4","boot-1 5","boot-2 5"],
+    ["moustache 3", "hat 3","hat-2 3","scarf 4","scarf-text 4"],
+    ["lips 3", "head 3", "pot 4","raincoat 4","dress 4"],
+    ["glass-1 3","glass-2 3","hair 3","moustache 3","stick 4"],
+    ["glass 3","hair 3","scarf 4","spokes 4","tangle 4"]
+  ];  
 
   this.fishScore = []
 };
@@ -160,6 +159,53 @@ GameManager.prototype.updateScore = function (data) {
     return;
   }
   if (egg[0].classList.contains("cloth") && this.grid.list[data.egg].x == this.basket.x && this.grid.list[data.egg].y == this.basket.y){
+    var type = egg[0].classList[3].split('_');
+    var num;
+    switch (type[0]){
+      case "sailor":{
+        num = 0;
+        break;
+      }
+      case "girl":{
+        num =  1;
+        break;
+      }
+      case "zenit":{
+        num =  2;
+        break;
+      }
+      case "woman":{
+        num =  3;
+        break;
+      }
+      case "oldman":{
+        num =  4;
+        break;
+      }
+      case "granny":{
+        num =  5;
+        break;
+      }
+    }
+    
+    var new_cloth = [];
+    for (let i = 0;i<this.cloth.length;i++){
+      new_cloth.push([]);
+    }
+    for (let i = 0;i<this.cloth.length;i++){
+      
+      for (let j = 0;j<this.cloth[i].length;j++)
+        {
+          if (i==num) {
+            new_cloth[i].push(this.cloth[i][j]); 
+            continue;
+          }
+          if (!this.cloth[i][j].includes(egg[0].classList[4])){
+            new_cloth[i].push(this.cloth[i][j]);
+          }
+        }
+    }
+    this.cloth = new_cloth;
     this.fishScore.push(egg[0].classList[3]);
     this.HTMLredraw.updateFishScore({value:egg[0].classList[3]});
     // Если собрали пять одежд — победа
@@ -208,11 +254,21 @@ GameManager.prototype.findAvailableChicken = function() {
 
 GameManager.prototype.runEgg = function(chicken) {
   this.chickens[chicken].egg.run(this.speed, this.api.bind(this));
-  if (Math.random()*10>8) {
+  let eggs = document.getElementsByClassName("egg");
+  let check=true;
+  for (let i = 0;i<eggs.length;i++){
+    if (eggs[i].classList.contains("cloth")) check = false;
+  }
+  let possible = Math.random()*10
+  //let possible = 10;
+  if (check && (possible>8)) {
     var currentClass = "egg e-"+chicken;
     var egg = document.getElementsByClassName(currentClass);
     egg[0].className += ' cloth';
     var arr = getRandomInt(this.cloth.length-1);
+    while (this.cloth[arr].length==0){
+      arr = getRandomInt(this.cloth.length-1);
+    }
     var index = getRandomInt(this.cloth[arr].length-1);
     var type;
     switch (arr){

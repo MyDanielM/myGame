@@ -57,9 +57,26 @@ HTMLredraw.prototype.gameOver = function() {
 };
 
 HTMLredraw.prototype.gameWin = function() {
-  this.messageWrap.classList.add("win");
   fish = document.getElementsByClassName("fish-score");
-  fish[0].classList+= " win"
+  let almost = true;
+  for (let i =0; i<4;i++){
+    let splite1 = fish[0].childNodes[i].classList[0].split('_');
+    let splite2 = fish[0].childNodes[i+1].classList[0].split('_');
+    if (splite1[0]==splite2[0]){
+      continue;
+    }
+    else almost = false;
+    break;
+  }
+  if (!almost){
+    this.messageWrap.classList.add("almost_win");
+    fish[0].classList+= " almost_win"
+    this.messageWrap.innerHTML += '<a href="../pages/game.html">'
+  }
+  else {
+    this.messageWrap.classList.add("win");
+    fish[0].classList+= " win"
+  }
   this.messageWrap.show();
 };
 

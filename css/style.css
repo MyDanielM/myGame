@@ -104,6 +104,18 @@ h3 {
   transform-origin: left top;
 }
 
+#game-wrap .fish-score.almost_win {
+  width: 275px;
+  height: 98px;
+  position: absolute;
+  background: transparent url('../img/score/fish_score.svg') center center no-repeat;
+  top:67px;
+  left:54px;
+  z-index: 12;
+  transform: scale(3) translate(20%, -5%);
+  transform-origin: left top;
+}
+
   /*
    * Basket
    */
@@ -991,7 +1003,7 @@ h3 {
     }
 
   #message.lose{
-    z-index: 10;
+    z-index: 12;
     width: 100%;
     height: 100%;
     background: transparent url('../img/screens/lose.svg');
@@ -1009,9 +1021,19 @@ h3 {
     display: none;
     overflow: hidden;
   }
+
+  #message.almost_win{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: transparent url('../img/screens/almost_win.svg');
+    position: relative;
+    display: none;
+    overflow: hidden;
+  }
   
-  #message.lose a{
-    z-index: 11;
+  #message a{
+    z-index: 13;
     width: 100%;
     height: 100%;
     display: block;
