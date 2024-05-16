@@ -78,18 +78,18 @@ h3 {
 #game-wrap {
 	width: 1250px;
   height: 765px;
-  margin: 13%;
+  margin: 5% auto ;
   background: transparent url('../img/game-bg.svg') center center no-repeat;
   position: relative;
 }
 
 #game-wrap .fish-score {
-  width: 225px;
-  height: 73px;
+  width: 275px;
+  height: 98px;
   position: absolute;
   background: transparent url('../img/score/fish_score.svg') center center no-repeat;
-  top:80px;
-  left:80px;
+  top:67px;
+  left:54px;
 
 }
 
@@ -621,37 +621,37 @@ h3 {
   /*Моряк*/
 
   #game-wrap .fish-score .sailor_cap{
-    width: 225px; 
-    height: 73px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
     background: transparent url('../img/score/sailor/cap.svg');
     z-index: 2;
   }
   
   #game-wrap .fish-score .sailor_felt-boots{
-    width: 225px; 
-    height: 73px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
     background: transparent url('../img/score/sailor/felt_boots.svg');
     z-index: 2 ;
   }
   
   #game-wrap .fish-score .sailor_felt-boots-2{
-    width: 225px; 
-    height: 73px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
     background: transparent url('../img/score/sailor/felt_boots_2.svg');
   } 
   #game-wrap .fish-score .sailor_vest{
-    width: 225px; 
-    height: 73px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
     background: transparent url('../img/score/sailor/vest.svg');
     z-index: 1;
   }
   #game-wrap .fish-score .sailor_whisker{
-    width: 225px; 
-    height: 73px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
     background: transparent url('../img/score/sailor/whisker.svg') no-repeat;
   }
@@ -659,50 +659,85 @@ h3 {
   /*Девочка*/
   
   #game-wrap .fish-score .girl_boot-1{
-    width: 23px;
-    height: 23px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
-    left: 3px;
-    top: 7px;
-    background: transparent url('../img/score/girl/boot_1.png');
+    background: transparent url('../img/score/girl/boot_1.svg') no-repeat;
     z-index: 2;
   }
   
   #game-wrap .fish-score .girl_boot-2{
-    width: 17px; 
-    height: 15px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
-    left: 81px;
-    top: 13px;
-    background: transparent url('../img/score/girl/boot_2.png');
-    z-index: 2 ;
+    background: transparent url('../img/score/girl/boot_2.svg') no-repeat;
+    z-index: 2;
   }
   
   #game-wrap .fish-score .girl_tors-1{
-    width: 17px;
-    height: 15px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
-    left: 80px;
-    top: 14px;
-    background: transparent url('../img/score/girl/tors_1.png');
+    background: transparent url('../img/score/girl/tors_1.svg') no-repeat;
+    z-index: 2;
   } 
   #game-wrap .fish-score .girl_tors-2{
-    width: 42px;
-    height: 19px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
-    left: 23px;
-    top: 10px;
-    background: transparent url('../img/score/girl/tors_2.png');
-    z-index: 1;
+    background: transparent url('../img/score/girl/tors_2.svg') no-repeat;
+    z-index: 2;
   }
   #game-wrap .fish-score .girl_tors-3{
-    width: 7px;
-    height: 2px;
+    width: 275px; 
+    height: 98px;
     position: absolute;
-    left: 3px;
-    top: 21px;
-    background: transparent url('../img/score/girl/tors_3.png');
+    background: transparent url('../img/score/girl/tors_3.svg') no-repeat;
+    z-index: 2;
   }
+
+  /*Женщина*/
+
+
+  #game-wrap .fish-score .woman_dress{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/woman/dress.svg') no-repeat;
+    z-index: 2;
+  }
+  
+  #game-wrap .fish-score .woman_head{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/woman/head.svg') no-repeat;
+    z-index: 5;
+  }
+  
+  #game-wrap .fish-score .woman_lips{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/woman/lips.svg') no-repeat;
+    z-index: 2;
+  } 
+  #game-wrap .fish-score .woman_pot{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/woman/pot.svg') no-repeat;
+    z-index: 4;
+  }
+  #game-wrap .fish-score .woman_raincoat{
+    width: 275px; 
+    height: 98px;
+    position: absolute;
+    background: transparent url('../img/score/woman/raincoat.svg') no-repeat;
+    z-index: 3;
+  }
+
+
 
   #game-wrap #score {
     display: none;
