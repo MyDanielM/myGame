@@ -46,7 +46,7 @@ a {
 
 @media only screen and (max-width: 768px){
     .img {
-        background: transparent url('../img/screens/start_768.svg') center top no-repeat;
+        background: transparent url('../img/screens/start_560.svg') center top no-repeat;
     }
 }
 
