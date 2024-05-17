@@ -7,6 +7,11 @@ var GameManager = function() {
 
 // Initial game settings
 GameManager.prototype.init = function () {
+  var appCache = window.applicationCache;    
+  appCache.update();
+  if (appCache.status == window.applicationCache.UPDATEREADY){
+    appCache.swapCache();
+  }
   this.score = 0;
   this.loss = 0;
   this.over = false;
