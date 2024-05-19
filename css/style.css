@@ -81,6 +81,7 @@ h3 {
   margin: 5% auto ;
   background: transparent url('../img/game-bg.svg') center center no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
 #game-wrap .fish-score {
@@ -120,29 +121,22 @@ h3 {
    * Basket
    */
   #game-wrap .basket {
-    width: 80px;
-    height: 80px;
+    width: 1250px;
+    height: 765px;
     position: absolute;
+    background: transparent url('../img/basket/basket.svg') left top no-repeat;
   }
     #game-wrap[data-bx="0"][data-by="1"] .basket {
-      width: 1250px;
-      height: 765px;
-      background: transparent url('../img/basket/basket-p-0-1.svg') left top no-repeat;
+      transform: rotate(-45deg) translate(-12%,5%);
     }
     #game-wrap[data-bx="1"][data-by="1"] .basket {
-      width: 1250px;
-      height: 765px;
-      background: transparent url('../img/basket/basket-p-1-1.svg') right top no-repeat;
+      transform: rotate(45deg) translate(12%,5%) scaleX(-1);
     }
     #game-wrap[data-bx="0"][data-by="0"] .basket {
-      width: 1250px;
-      height: 765px;
-      background: transparent url('../img/basket/basket-p-0-0.svg') left top no-repeat;
+      transform: rotate(-55deg) translate(-18%,10%);
     }
     #game-wrap[data-bx="1"][data-by="0"] .basket {
-      width: 1250px;
-      height: 765px;
-      background: transparent url('../img/basket/basket-p-1-0.svg') right top no-repeat;
+      transform: rotate(55deg) translate(18%,10%) scaleX(-1);
     }
   
     /*
