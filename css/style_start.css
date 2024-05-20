@@ -1,76 +1,44 @@
-body {
-    align-content: center;
-    height: 100vh;
-    margin: 0px;
-    width: 100vw;
-}
-
-a {
-    display: block;
-    align-content: center;
-    height: 100vh;
-    margin: 0px;
-    width: 100vw;
-}
-
-.img{
-    min-width: 320px;
-    max-width: 1920px;
-    height: 100vh;
-    
-}
-
-@media only screen and (max-width: 2560px){
-    .img {
-        background: transparent url('../img/screens/start.svg') center center no-repeat;
-    }
-}
-
-
-@media only screen and (max-width: 1024px){
-    .img {
-        background: transparent url('../img/screens/start_1024.svg') center top no-repeat;
-    }
-}
-
-@media only screen and (max-width: 932px){
-    .img {
-        background: transparent url('../img/screens/start_932.svg') center top no-repeat;
-    }
-}
-@media only screen and (max-width: 844px){
-    .img {
-        background: transparent url('../img/screens/start_667.svg') center top no-repeat;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    .img {
-        background: transparent url('../img/screens/start_560.svg') center top no-repeat;
-    }
-}
-
-
-@media only screen and (max-width: 667px){
-    .img {
-        background: transparent url('../img/screens/start_667.svg') center top no-repeat;
-    }
-}
-
-@media only screen and (max-width: 425px){
-    .img {
-        background: transparent url('../img/screens/start_425.svg') center top no-repeat;
-    }
-}
-
-@media only screen and (max-width: 375px){
-    .img {
-        background: transparent url('../img/screens/start_375.svg') center top no-repeat;
-    }
-}
-
-@media only screen and (max-width: 320px){
-    .img {
-        background: transparent url('../img/screens/start_320.svg') center top no-repeat;
-    }
+body { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+} 
+ 
+.container { 
+    position: absolute; 
+    top: 5%; 
+    left: 5%; 
+    width: 90%; 
+    height: 90%; 
+} 
+ 
+.bg, .button, .a { 
+    position: absolute; 
+} 
+ 
+.bg { 
+    top: 5%; 
+    left: 5%; 
+    width: 90%; 
+    height: 90%; 
+    z-index: 1; 
+} 
+ 
+.button { 
+    left: 27%; 
+    top: 67%; 
+    width: 46%; 
+    height: 28%; 
+    z-index: 2; 
+} 
+ 
+.container a { 
+    position: absolute;
+    left: 27%; 
+    top: 67%; 
+    width: 46%; 
+    height: 28%; 
+    z-index: 5; 
+    overflow: hidden; 
 }
