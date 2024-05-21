@@ -11,6 +11,4 @@
       elem[0].style.display='block';
     }
   });
-  
-
 })();
