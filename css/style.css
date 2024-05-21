@@ -8,7 +8,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-	color: white;
+	color: #9A998E;
   font-size: 14px;
   line-height: 1.2em;
 	font-family: 'Alegreya Sans SC', Tahoma, Arial, sans-serif;
@@ -40,7 +40,7 @@ h3 {
   min-width: 640px;
   min-height: 100%;
   margin: 0 auto -40px;
-  background: #564e47;
+  background: white;
   text-align: center;
   overflow: hidden;
 }  
