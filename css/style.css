@@ -209,7 +209,7 @@ h3 {
     * wave
     */
     #game-wrap .wave {
-      z-index: 10;
+      z-index: 3;
       width: 100vw;
       height: 100vh;
       position: absolute;
@@ -1110,9 +1110,10 @@ h3 {
     bottom: 0px;
   }
     #controls a {
+      z-index: 5;
       width: 12%;
       height: 50%;
-      
+      background-color: white;
       font-size: 16px;
       line-height: 32px;
       text-indent: -200px;
@@ -1123,22 +1124,34 @@ h3 {
     }
     #controls a[data-x="0"][data-y="1"] {
       left: 0;
-      background: transparent url('../img/buttons/nav-button_top-left.svg') center center no-repeat;
+      background-image: url('../img/buttons/nav-button_top-left.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     #controls a[data-x="0"][data-y="0"] {
-      background: transparent url('../img/buttons/nav-button_bottom-left.svg') center center no-repeat;
+      background-image: url('../img/buttons/nav-button_bottom-left.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       left: 0;
       bottom: 0;
     }
     #controls a[data-x="1"][data-y="0"] {
      bottom: 0; 
      right: 0;
-     background: transparent url('../img/buttons/nav-button_bottom-right.svg') center center no-repeat;
+     background-image: url('../img/buttons/nav-button_bottom-right.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     #controls a[data-x="1"][data-y="1"] {
       right: 0;
       top: 0;
-      background: transparent url('../img/buttons/nav-button_top-right.svg') center center no-repeat;
+      background-image: url('../img/buttons/nav-button_top-right.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
 /* Mobile devices */
