@@ -8,7 +8,8 @@
       location.reload();
     } else {
       // Устройство находится в портретной ориентации
-      elem[0].style.display='block';
+      location.reload();
+      //elem[0].style.display='block';
     }
   });
 })();
