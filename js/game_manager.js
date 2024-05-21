@@ -1,12 +1,17 @@
-
 var GameManager = function() {
-  this.init();
-  this.setup();
-  this.start();
+
+    this.init();
+    this.setup();
+    this.start(); 
+
 }
 
 // Initial game settings
 GameManager.prototype.init = function () {
+  let elem = document.getElementsByClassName("orientation-vert");
+  if (window.orientation === 90 || window.orientation === -90){
+    elem[0].style.display='none';
+  }
   window.onload = function() {
     var gameWrap = document.getElementById('game-wrap');
     var initialWidth = 1250; // Ширина блока в исходных пикселях
@@ -14,22 +19,16 @@ GameManager.prototype.init = function () {
     var scaleWidth = window.innerWidth / initialWidth;
     var scaleHeight = window.innerHeight / initialHeight;
     var scale = Math.min(scaleWidth, scaleHeight);
-  
+    
     // Проверяем, чтобы высота блока не превышала высоту экрана пользователя
     if (scaleHeight < scaleWidth) {
       scale = scaleHeight;
     }
-    
+      
     // Устанавливаем масштаб и перемещаем в центр
     gameWrap.style.transform = 'scale(' + scale + ') translate(-50%, -50%)';
   };
-  //if (document.cookie)
-  /*
-  var appCache = window.caches.open();    
-  appCache.update();
-  if (appCache.status == window.applicationCache.UPDATEREADY){
-    appCache.swapCache();
-  } */
+  
   this.score = 0;
   this.loss = 0;
   this.over = false;
