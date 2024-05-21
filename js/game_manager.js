@@ -7,6 +7,7 @@ var GameManager = function() {
 
 // Initial game settings
 GameManager.prototype.init = function () {
+  //if (document.cookie)
   /*
   var appCache = window.caches.open();    
   appCache.update();
@@ -216,6 +217,10 @@ GameManager.prototype.updateScore = function (data) {
     this.HTMLredraw.updateFishScore({value:egg[0].classList[3]});
     // Если собрали пять одежд — победа
     if (this.fishScore.length==5){
+      //cookie = document.cookie;
+      //cookie+="isWin = True";
+      //document.cookie = cookie;
+      //console.log(document.cookie);
       this.gameWin();
       return false;
     }
