@@ -33,6 +33,9 @@ h3 {
 }
 
 .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   min-width: 640px;
   min-height: 100%;
@@ -76,10 +79,14 @@ h3 {
 #game-wrap {
 	width: 1250px;
   height: 765px;
-  margin: 5% auto ;
+  margin: 0 auto ;
   background: transparent url('../img/game-bg.svg') center center no-repeat;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   overflow: hidden;
+  transform-origin: top left;
+  transform: scale(1);
 }
 
 #game-wrap .fish-score {
@@ -1084,7 +1091,7 @@ body.is-mobile {
     display: none;
   }
 
-
+/*
 @media only screen and (max-width: 986px) {
   .page{
     width: 100%;
@@ -1129,7 +1136,6 @@ body.is-mobile {
   #game-wrap {
     transform: scale(0.4) translate(-1%, -5%);
     transform-origin: left top;
-  }
- 
-  
+  }  
 }
+*/

@@ -7,6 +7,22 @@ var GameManager = function() {
 
 // Initial game settings
 GameManager.prototype.init = function () {
+  window.onload = function() {
+    var gameWrap = document.getElementById('game-wrap');
+    var initialWidth = 1250; // Ширина блока в исходных пикселях
+    var initialHeight = 765; // Высота блока в исходных пикселях
+    var scaleWidth = window.innerWidth / initialWidth;
+    var scaleHeight = window.innerHeight / initialHeight;
+    var scale = Math.min(scaleWidth, scaleHeight);
+  
+    // Проверяем, чтобы высота блока не превышала высоту экрана пользователя
+    if (scaleHeight < scaleWidth) {
+      scale = scaleHeight;
+    }
+    
+    // Устанавливаем масштаб и перемещаем в центр
+    gameWrap.style.transform = 'scale(' + scale + ') translate(-50%, -50%)';
+  };
   //if (document.cookie)
   /*
   var appCache = window.caches.open();    
