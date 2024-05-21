@@ -74,11 +74,12 @@ h3 {
 }
 
 #game-wrap {
-	width: 1250px;
-  height: 765px;
-  margin: 5% auto ;
-  background: transparent url('../img/game-bg.svg') center center no-repeat;
-  position: relative;
+	width: 100vw;
+  height: 100vh;
+  background-image: url('../img/game-bg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -119,38 +120,103 @@ h3 {
    * Basket
    */
   #game-wrap .basket {
-    width: 1250px;
-    height: 765px;
     position: absolute;
-    background: transparent url('../img/basket/basket.svg') left top no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/basket/basket.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+      left: 0;
+      top: 0;
+    transform-origin: center center; /* Ось вращения по центру рыбки */
+
   }
+  @media screen and (min-width: 1250px) {
     #game-wrap[data-bx="0"][data-by="1"] .basket {
-      transform: rotate(-45deg) translate(-12%,5%);
+      transform: rotate(-45deg) translate(calc(-9vw), calc(5vh));
     }
+  
     #game-wrap[data-bx="1"][data-by="1"] .basket {
-      transform: rotate(45deg) translate(12%,5%) scaleX(-1);
+      transform: rotate(45deg) translate(calc(9vw), calc(5vh)) scaleX(-1);
     }
+  
     #game-wrap[data-bx="0"][data-by="0"] .basket {
-      transform: rotate(-55deg) translate(-18%,10%);
+      transform: rotate(-55deg) translate(calc(-15vw), calc(10vh));
     }
+  
     #game-wrap[data-bx="1"][data-by="0"] .basket {
-      transform: rotate(55deg) translate(18%,10%) scaleX(-1);
+      transform: rotate(55deg) translate(calc(15vw), calc(10vh)) scaleX(-1);
     }
+  } 
+
+
+  @media screen and (min-width: 1024px) and (max-width:1250px) {
+    #game-wrap[data-bx="0"][data-by="1"] .basket {
+      transform: rotate(-45deg) translate(calc(-11vw), calc(5vh));
+    }
+  
+    #game-wrap[data-bx="1"][data-by="1"] .basket {
+      transform: rotate(45deg) translate(calc(11vw), calc(5vh)) scaleX(-1);
+    }
+  
+    #game-wrap[data-bx="0"][data-by="0"] .basket {
+      transform: rotate(-55deg) translate(calc(-19vw), calc(10vh));
+    }
+  
+    #game-wrap[data-bx="1"][data-by="0"] .basket {
+      transform: rotate(55deg) translate(calc(19vw), calc(10vh)) scaleX(-1);
+    }
+  } 
+
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+    #game-wrap[data-bx="0"][data-by="1"] .basket {
+      transform: rotate(-45deg) translate(calc(-8vw), calc(2vh));
+    }
+  
+    #game-wrap[data-bx="1"][data-by="1"] .basket {
+      transform: rotate(45deg) translate(calc(8vw), calc(2vh)) scaleX(-1);
+    }
+  
+    #game-wrap[data-bx="0"][data-by="0"] .basket {
+      transform: rotate(-55deg) translate(calc(-14vw), calc(7vh));
+    }
+  
+    #game-wrap[data-bx="1"][data-by="0"] .basket {
+      transform: rotate(55deg) translate(calc(14vw), calc(7vh)) scaleX(-1);
+    }
+  }
+  
+  @media screen and (min-width: 425px) and (max-width: 767px) {
+    #game-wrap[data-bx="0"][data-by="1"] .basket {
+      transform: rotate(-45deg) translate(calc(-10vw), calc(5vh));
+    }
+  
+    #game-wrap[data-bx="1"][data-by="1"] .basket {
+      transform: rotate(45deg) translate(calc(10vw), calc(5vh)) scaleX(-1);
+    }
+  
+    #game-wrap[data-bx="0"][data-by="0"] .basket {
+      transform: rotate(-55deg) translate(calc(-15vw), calc(10vh));
+    }
+  
+    #game-wrap[data-bx="1"][data-by="0"] .basket {
+      transform: rotate(55deg) translate(calc(15vw), calc(10vh)) scaleX(-1);
+    }
+  }
   
     /*
     * wave
     */
     #game-wrap .wave {
       z-index: 10;
-      width: 1250px;
-      height: 127px;
+      width: 100vw;
+      height: 100vh;
       position: absolute;
-      top: 638px;
-      background: transparent url('../img/wave.svg') top center no-repeat;
-      animation-duration: 5s;
-      animation-name: waves;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
+      background-image: url('../img/wave.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
    
 
@@ -1083,53 +1149,3 @@ body.is-mobile {
   body:not(.is-mobile) .more-info a.restart-game {
     display: none;
   }
-
-
-@media only screen and (max-width: 986px) {
-  .page{
-    width: 100%;
-    height: 100%;
-  }
-  #game-wrap {
-    transform: scale(0.5) translate(15%, -14%);
-    transform-origin: left top;
-  }
- 
-}
-
-@media only screen and (width: 806px) {
-  .page {
-    width: 100%;
-    height: 100%;
-  }
-  #game-wrap {
-    transform: scale(0.45) translate(20%, -10%);
-    transform-origin: left top;
-  }
- 
-}
-
-@media only screen and (max-width: 768px) {
-  .page {
-    width: 100%;
-    height: 100%;
-  }
-  #game-wrap {
-    transform: scale(0.45) translate(15%, -13%);
-    transform-origin: left top;
-  }
- 
-}
-
-@media only screen and (max-width: 667px) {
-  .page {
-    width: 100%;
-    height: 100%;
-  }
-  #game-wrap {
-    transform: scale(0.4) translate(-1%, -5%);
-    transform-origin: left top;
-  }
- 
-  
-}
