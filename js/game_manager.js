@@ -1,13 +1,17 @@
-var GameManager = function() {
 
+var GameManager = function() {
+    checkCookie();
     this.init();
     this.setup();
     this.start(); 
 
 }
 
+
 // Initial game settings
 GameManager.prototype.init = function () {
+
+
   let elem = document.getElementsByClassName("orientation-vert");
   if (window.orientation === 90 || window.orientation === -90){
     elem[0].style.display='none';
@@ -232,10 +236,7 @@ GameManager.prototype.updateScore = function (data) {
     this.HTMLredraw.updateFishScore({value:egg[0].classList[3]});
     // Если собрали пять одежд — победа
     if (this.fishScore.length==5){
-      //cookie = document.cookie;
-      //cookie+="isWin = True";
-      //document.cookie = cookie;
-      //console.log(document.cookie);
+      setCookie("isWin", "true", 1);
       this.gameWin();
       return false;
     }
@@ -383,3 +384,36 @@ GameManager.prototype.touchscreenModification = function() {
 
   this.HTMLredraw.mobileVersion();
 };
+
+
+function checkCookie() {
+  var isWin = getCookie("isWin");
+  if (isWin == "true") {
+      alert("Вы уже выиграли приз! Нельзя играть снова.");
+  }
+}
+
+// Установка значения isWin в куки
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+// Получение значения из куки
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+      }
+  }
+  return "";
+}
