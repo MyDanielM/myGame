@@ -6,6 +6,9 @@ function HTMLredraw() {
   this.scoreNums = 4;
 }
 
+let codes = ['111111', '222222', '333333','444444','555555','666666'];
+let texts = ['Пиво Ч.П.Х', 'Мороженое', 'Кондитерская колбаска', 'Свеча с ароматом свежей корюшки', 'Френч дог', 'Хот дог с корюшкой'];
+
 HTMLredraw.prototype.updateEggPosition = function(data) {
   this.changeAttributesValue(['data-egg-' + data.egg], [data.position]);
   /*if (data.position == 6){
@@ -75,8 +78,45 @@ HTMLredraw.prototype.gameWin = function() {
   }
   else {
     this.messageWrap.classList.add("win");
-    fish[0].classList+= " win"
-    this.messageWrap.innerHTML += '<div class="barcode_base">'
+    fish[0].classList+= " win";
+    let type = fish[0].childNodes[0].classList[0].split('_');
+    let num;
+    let text;
+    switch (type[0]){
+      case "sailor":{
+        num = codes[0];
+        text = texts[0];
+        break;
+      }
+      case "girl":{
+        num =  codes[1];
+        text = texts[1];
+        break;
+      }
+      case "zenit":{
+        num =  codes[2];
+        text = texts[2];
+        break;
+      }
+      case "woman":{
+        num = codes[3];
+        text = texts[3];
+        break;
+      }
+      case "oldman":{
+        num =  codes[4];
+        text = texts[4];
+        break;
+      }
+      case "granny":{
+        num =  codes[5];
+        text = texts[5];
+        break;
+      }
+    }
+    this.messageWrap.innerHTML += `<div class="text">Поздравляем! Твой приз: `+ text+`!</div>`
+    this.messageWrap.innerHTML += `<div class="nums">`+num+`</div>`
+    //this.messageWrap.innerHTML += '<div class="barcode_base">'
   }
   this.messageWrap.show();
 };

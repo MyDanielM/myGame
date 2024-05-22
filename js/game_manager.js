@@ -292,7 +292,8 @@ GameManager.prototype.runEgg = function(chicken) {
     var currentClass = "egg e-"+chicken;
     var egg = document.getElementsByClassName(currentClass);
     egg[0].className += ' cloth';
-    var arr = getRandomInt(this.cloth.length-1);
+    //var arr = getRandomInt(this.cloth.length-1);
+    let arr = 2;
     while (this.cloth[arr].length==0){
       arr = getRandomInt(this.cloth.length-1);
     }

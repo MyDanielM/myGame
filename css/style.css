@@ -8,11 +8,6 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-	color: #9A998E;
-  font-size: 14px;
-  line-height: 1.2em;
-	font-family: 'Alegreya Sans SC', Tahoma, Arial, sans-serif;
-  font-weight: normal;
 }
 
 a {
@@ -126,7 +121,7 @@ h3 {
   top:67px;
   left:54px;
   z-index: 12;
-  transform: translate(160%, 420%);
+  transform: scale(2) translate(54%,180%);
   transform-origin: left top;
 }
 #game-wrap .barcode_base {
@@ -136,6 +131,37 @@ h3 {
   background: transparent url('../img/barcodes/barcode.svg') center center no-repeat;
   top:158px;
   left:466px;
+  z-index: 12;
+}
+
+@font-face {
+  font-family: Natasha;
+  src: url('../fonts/Natasha.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+#game-wrap .text {
+  font-size: 30px;
+  color: #353A53;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  font-family: Natasha;
+  top:110px;
+  z-index: 12;
+}
+#game-wrap .nums {
+  font-size: 150px;
+  color: #353A53;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  font-family: Montserrat;
+  top:230px;
   z-index: 12;
 }
 
