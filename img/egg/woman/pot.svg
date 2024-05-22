@@ -1,26 +1,132 @@
 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_3202_8127)">
-<circle cx="30" cy="30" r="30" fill="url(#paint0_radial_3202_8127)"/>
-<circle cx="24.3318" cy="19.0896" r="1.67949" fill="black"/>
-<circle cx="38.7264" cy="19.0896" r="1.67949" fill="black"/>
-<path d="M53.8524 17.4658C53.4976 17.1966 53.0503 17.0794 52.609 17.14C52.1677 17.2006 51.7686 17.434 51.4994 17.7889C51.2302 18.1437 51.113 18.591 51.1736 19.0323C51.2342 19.4736 51.4676 19.8727 51.8225 20.1419L52.8374 18.8039L53.8524 17.4658Z" fill="black"/>
-<path d="M10.993 21.5277C11.411 21.3738 11.7507 21.0601 11.9375 20.6558C12.1242 20.2514 12.1427 19.7893 11.9888 19.3714C11.8349 18.9534 11.5212 18.6136 11.1169 18.4269C10.7125 18.2401 10.2504 18.2217 9.83245 18.3756L8.06443 18.8509C9.3628 19.769 9.99547 20.3671 10.993 21.5277Z" fill="black"/>
-<circle cx="31.5291" cy="26.3846" r="1.67949" fill="black"/>
-<circle cx="45.8299" cy="26.3846" r="1.67949" fill="black"/>
-<circle cx="38.7264" cy="33.6795" r="1.67949" fill="black"/>
-<circle cx="31.5291" cy="40.9725" r="1.67949" fill="black"/>
-<circle cx="24.3318" cy="48.2654" r="1.67949" fill="black"/>
-<circle cx="24.3318" cy="33.6795" r="1.67949" fill="black"/>
-<circle cx="17.2303" cy="26.3846" r="1.67949" fill="black"/>
-<circle cx="17.1326" cy="40.9725" r="1.67949" fill="black"/>
-</g>
+<circle cx="30" cy="30" r="30" fill="url(#paint0_radial_5294_4)"/>
+<circle cx="6.71995" cy="14.4563" r="1.71995" fill="black"/>
+<circle cx="6.71995" cy="14.4563" r="1.71995" fill="black"/>
+<circle cx="6.71995" cy="14.4563" r="1.71995" fill="black"/>
+<circle cx="14.7199" cy="6.54221" r="1.71995" fill="black"/>
+<circle cx="14.7199" cy="6.54221" r="1.71995" fill="black"/>
+<circle cx="14.7199" cy="6.54221" r="1.71995" fill="black"/>
+<circle cx="21.9524" cy="6.88596" r="1.71995" fill="black"/>
+<circle cx="21.9524" cy="6.88596" r="1.71995" fill="black"/>
+<circle cx="21.9524" cy="6.88596" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="7.23167" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="7.23167" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="7.23167" r="1.71995" fill="black"/>
+<circle cx="38.8039" cy="7.57542" r="1.71995" fill="black"/>
+<circle cx="38.8039" cy="7.57542" r="1.71995" fill="black"/>
+<circle cx="38.8039" cy="7.57542" r="1.71995" fill="black"/>
+<circle cx="47.0617" cy="7.92112" r="1.71995" fill="black"/>
+<circle cx="47.0617" cy="7.92112" r="1.71995" fill="black"/>
+<circle cx="47.0617" cy="7.92112" r="1.71995" fill="black"/>
+<circle cx="54.9699" cy="16.8625" r="1.71995" fill="black"/>
+<circle cx="54.9699" cy="16.8625" r="1.71995" fill="black"/>
+<circle cx="54.9699" cy="16.8625" r="1.71995" fill="black"/>
+<circle cx="46.718" cy="16.5188" r="1.71995" fill="black"/>
+<circle cx="46.718" cy="16.5188" r="1.71995" fill="black"/>
+<circle cx="46.718" cy="16.5188" r="1.71995" fill="black"/>
+<circle cx="38.4602" cy="16.1731" r="1.71995" fill="black"/>
+<circle cx="38.4602" cy="16.1731" r="1.71995" fill="black"/>
+<circle cx="38.4602" cy="16.1731" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="15.4895" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="15.4895" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="15.4895" r="1.71995" fill="black"/>
+<circle cx="21.6086" cy="15.1457" r="1.71995" fill="black"/>
+<circle cx="21.6086" cy="15.1457" r="1.71995" fill="black"/>
+<circle cx="21.6086" cy="15.1457" r="1.71995" fill="black"/>
+<circle cx="13.3508" cy="14.8" r="1.71995" fill="black"/>
+<circle cx="13.3508" cy="14.8" r="1.71995" fill="black"/>
+<circle cx="13.3508" cy="14.8" r="1.71995" fill="black"/>
+<circle cx="4.75315" cy="23.3977" r="1.71995" fill="black"/>
+<circle cx="4.75315" cy="23.3977" r="1.71995" fill="black"/>
+<circle cx="4.75315" cy="23.3977" r="1.71995" fill="black"/>
+<circle cx="54.9699" cy="25.8059" r="1.71995" fill="black"/>
+<circle cx="54.9699" cy="25.8059" r="1.71995" fill="black"/>
+<circle cx="54.9699" cy="25.8059" r="1.71995" fill="black"/>
+<circle cx="46.718" cy="25.466" r="1.71995" fill="black"/>
+<circle cx="46.718" cy="25.466" r="1.71995" fill="black"/>
+<circle cx="46.718" cy="25.466" r="1.71995" fill="black"/>
+<circle cx="38.4602" cy="25.1203" r="1.71995" fill="black"/>
+<circle cx="38.4602" cy="25.1203" r="1.71995" fill="black"/>
+<circle cx="38.4602" cy="25.1203" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="24.4328" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="24.4328" r="1.71995" fill="black"/>
+<circle cx="30.2063" cy="24.4328" r="1.71995" fill="black"/>
+<circle cx="21.6086" cy="24.0871" r="1.71995" fill="black"/>
+<circle cx="21.6086" cy="24.0871" r="1.71995" fill="black"/>
+<circle cx="21.6086" cy="24.0871" r="1.71995" fill="black"/>
+<circle cx="13.3508" cy="23.7434" r="1.71995" fill="black"/>
+<circle cx="13.3508" cy="23.7434" r="1.71995" fill="black"/>
+<circle cx="13.3508" cy="23.7434" r="1.71995" fill="black"/>
+<circle cx="4.0637" cy="31.6574" r="1.71995" fill="black"/>
+<circle cx="4.0637" cy="31.6574" r="1.71995" fill="black"/>
+<circle cx="4.0637" cy="31.6574" r="1.71995" fill="black"/>
+<circle cx="54.2864" cy="34.0637" r="1.71995" fill="black"/>
+<circle cx="54.2864" cy="34.0637" r="1.71995" fill="black"/>
+<circle cx="54.2864" cy="34.0637" r="1.71995" fill="black"/>
+<circle cx="46.0285" cy="33.718" r="1.71995" fill="black"/>
+<circle cx="46.0285" cy="33.718" r="1.71995" fill="black"/>
+<circle cx="46.0285" cy="33.718" r="1.71995" fill="black"/>
+<circle cx="37.7746" cy="33.3742" r="1.71995" fill="black"/>
+<circle cx="37.7746" cy="33.3742" r="1.71995" fill="black"/>
+<circle cx="37.7746" cy="33.3742" r="1.71995" fill="black"/>
+<circle cx="29.5168" cy="32.6848" r="1.71995" fill="black"/>
+<circle cx="29.5168" cy="32.6848" r="1.71995" fill="black"/>
+<circle cx="29.5168" cy="32.6848" r="1.71995" fill="black"/>
+<circle cx="20.9192" cy="32.341" r="1.71995" fill="black"/>
+<circle cx="20.9192" cy="32.341" r="1.71995" fill="black"/>
+<circle cx="20.9192" cy="32.341" r="1.71995" fill="black"/>
+<circle cx="12.6614" cy="32.0012" r="1.71995" fill="black"/>
+<circle cx="12.6614" cy="32.0012" r="1.71995" fill="black"/>
+<circle cx="12.6614" cy="32.0012" r="1.71995" fill="black"/>
+<circle cx="4.0637" cy="39.9094" r="1.71995" fill="black"/>
+<circle cx="4.0637" cy="39.9094" r="1.71995" fill="black"/>
+<circle cx="4.0637" cy="39.9094" r="1.71995" fill="black"/>
+<circle cx="54.2864" cy="42.3157" r="1.71995" fill="black"/>
+<circle cx="54.2864" cy="42.3157" r="1.71995" fill="black"/>
+<circle cx="54.2864" cy="42.3157" r="1.71995" fill="black"/>
+<circle cx="46.0285" cy="41.9719" r="1.71995" fill="black"/>
+<circle cx="46.0285" cy="41.9719" r="1.71995" fill="black"/>
+<circle cx="46.0285" cy="41.9719" r="1.71995" fill="black"/>
+<circle cx="37.7746" cy="41.6321" r="1.71995" fill="black"/>
+<circle cx="37.7746" cy="41.6321" r="1.71995" fill="black"/>
+<circle cx="37.7746" cy="41.6321" r="1.71995" fill="black"/>
+<circle cx="29.5168" cy="40.9426" r="1.71995" fill="black"/>
+<circle cx="29.5168" cy="40.9426" r="1.71995" fill="black"/>
+<circle cx="29.5168" cy="40.9426" r="1.71995" fill="black"/>
+<circle cx="20.9192" cy="40.5989" r="1.71995" fill="black"/>
+<circle cx="20.9192" cy="40.5989" r="1.71995" fill="black"/>
+<circle cx="20.9192" cy="40.5989" r="1.71995" fill="black"/>
+<circle cx="12.6614" cy="40.2551" r="1.71995" fill="black"/>
+<circle cx="12.6614" cy="40.2551" r="1.71995" fill="black"/>
+<circle cx="12.6614" cy="40.2551" r="1.71995" fill="black"/>
+<circle cx="44.9953" cy="50.5754" r="1.71995" fill="black"/>
+<circle cx="44.9953" cy="50.5754" r="1.71995" fill="black"/>
+<circle cx="44.9953" cy="50.5754" r="1.71995" fill="black"/>
+<circle cx="36.7414" cy="50.2297" r="1.71995" fill="black"/>
+<circle cx="36.7414" cy="50.2297" r="1.71995" fill="black"/>
+<circle cx="36.7414" cy="50.2297" r="1.71995" fill="black"/>
+<circle cx="28.4875" cy="49.5403" r="1.71995" fill="black"/>
+<circle cx="28.4875" cy="49.5403" r="1.71995" fill="black"/>
+<circle cx="28.4875" cy="49.5403" r="1.71995" fill="black"/>
+<circle cx="19.886" cy="49.1965" r="1.71995" fill="black"/>
+<circle cx="19.886" cy="49.1965" r="1.71995" fill="black"/>
+<circle cx="19.886" cy="49.1965" r="1.71995" fill="black"/>
+<circle cx="11.6282" cy="48.8528" r="1.71995" fill="black"/>
+<circle cx="11.6282" cy="48.8528" r="1.71995" fill="black"/>
+<circle cx="11.6282" cy="48.8528" r="1.71995" fill="black"/>
+<circle cx="36.3977" cy="56.8352" r="1.71995" fill="black"/>
+<circle cx="36.3977" cy="56.8352" r="1.71995" fill="black"/>
+<circle cx="36.3977" cy="56.8352" r="1.71995" fill="black"/>
+<circle cx="28.1438" cy="56.4914" r="1.71995" fill="black"/>
+<circle cx="28.1438" cy="56.4914" r="1.71995" fill="black"/>
+<circle cx="28.1438" cy="56.4914" r="1.71995" fill="black"/>
+<circle cx="19.886" cy="55.8078" r="1.71995" fill="black"/>
+<circle cx="19.886" cy="55.8078" r="1.71995" fill="black"/>
+<circle cx="19.886" cy="55.8078" r="1.71995" fill="black"/>
 <defs>
-<radialGradient id="paint0_radial_3202_8127" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 30) rotate(90) scale(30)">
+<radialGradient id="paint0_radial_5294_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 30) rotate(90) scale(30)">
 <stop offset="0.67" stop-color="#FFDB1D"/>
 <stop offset="1" stop-color="#AB9628" stop-opacity="0.8"/>
 </radialGradient>
-<clipPath id="clip0_3202_8127">
-<rect width="60" height="60" fill="white"/>
-</clipPath>
 </defs>
 </svg>

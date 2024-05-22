@@ -76,6 +76,7 @@ HTMLredraw.prototype.gameWin = function() {
   else {
     this.messageWrap.classList.add("win");
     fish[0].classList+= " win"
+    this.messageWrap.innerHTML += '<div class="barcode_base">'
   }
   this.messageWrap.show();
 };

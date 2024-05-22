@@ -126,9 +126,19 @@ h3 {
   top:67px;
   left:54px;
   z-index: 12;
-  transform: scale(3) translate(20%, 40%);
+  transform: translate(160%, 420gi%);
   transform-origin: left top;
 }
+#game-wrap .barcode_base {
+  width: 318px;
+  height: 321px;
+  position: absolute;
+  background: transparent url('../img/barcodes/barcode.svg') center center no-repeat;
+  top:158px;
+  left:466px;
+  z-index: 12;
+}
+
 
 #game-wrap .fish-score.almost_win {
   width: 275px;
