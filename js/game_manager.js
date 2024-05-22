@@ -389,7 +389,9 @@ GameManager.prototype.touchscreenModification = function() {
 function checkCookie() {
   var isWin = getCookie("isWin");
   if (isWin == "true") {
-      alert("Вы уже выиграли приз! Нельзя играть снова.");
+      let messageWrap = document.querySelector('#message');
+      messageWrap.classList.add("lose");
+      messageWrap.show();
   }
 }
 

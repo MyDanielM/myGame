@@ -1031,6 +1031,17 @@ h3 {
       bottom: 10px;
     }
 
+
+    #message.try_tommorow{
+      z-index: 15;
+      width: 100%;
+      height: 100%;
+      background: transparent url('../img/screens/try_tommorow.svg');
+      position: relative;
+      display: none;
+      overflow: hidden;
+    }
+
   #message.lose{
     z-index: 12;
     width: 100%;
