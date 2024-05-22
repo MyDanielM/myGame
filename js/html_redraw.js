@@ -77,6 +77,7 @@ HTMLredraw.prototype.gameWin = function() {
     this.messageWrap.innerHTML += '<a href="../pages/game.html">'
   }
   else {
+    setCookie("isWin", "true", 1);
     this.messageWrap.classList.add("win");
     fish[0].classList+= " win";
     let type = fish[0].childNodes[0].classList[0].split('_');
@@ -137,3 +138,11 @@ HTMLredraw.prototype.getMessage = function(message) {
 HTMLredraw.prototype.mobileVersion = function() {
   this.bodyWrap.className = 'is-mobile';
 };
+
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
