@@ -126,7 +126,7 @@ h3 {
   top:67px;
   left:54px;
   z-index: 12;
-  transform: translate(160%, 420gi%);
+  transform: translate(160%, 420%);
   transform-origin: left top;
 }
 #game-wrap .barcode_base {
