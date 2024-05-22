@@ -75,6 +75,9 @@ HTMLredraw.prototype.gameWin = function() {
     this.messageWrap.classList.add("almost_win");
     fish[0].classList+= " almost_win"
     this.messageWrap.innerHTML += '<a href="../pages/game.html">'
+    let controls = document.getElementsById('controls');
+    controls.style.zIndex='-10';
+    //controls.z-index = -10;
   }
   else {
     setCookie("isWin", "true", 1);
