@@ -55,7 +55,9 @@ HTMLredraw.prototype.updateLossCount = function(data) {
 
 HTMLredraw.prototype.gameOver = function() {
   this.messageWrap.classList.add("lose");
-  this.messageWrap.innerHTML += '<a href="../pages/game.html">'
+  this.messageWrap.innerHTML += '<a href="../pages/game.html">';
+  let controls = document.getElementById('controls');
+  controls.style.zIndex='-10';
   this.messageWrap.show();
 };
 
