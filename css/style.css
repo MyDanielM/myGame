@@ -173,7 +173,7 @@ h3 {
   background: transparent url('../img/score/fish_score.svg') center center no-repeat;
   top:67px;
   left:54px;
-  z-index: 12;
+  z-index: 13;
   transform: scale(3) translate(20%, -5%);
   transform-origin: left top;
 }
