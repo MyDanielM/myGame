@@ -390,7 +390,7 @@ function checkCookie() {
   var isWin = getCookie("isWin");
   if (isWin == "true") {
       let messageWrap = document.querySelector('#message');
-      messageWrap.classList.add("lose");
+      messageWrap.classList.add("try_tommorow");
       messageWrap.show();
   }
 }
