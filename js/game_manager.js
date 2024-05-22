@@ -286,14 +286,14 @@ GameManager.prototype.runEgg = function(chicken) {
   for (let i = 0;i<eggs.length;i++){
     if (eggs[i].classList.contains("cloth")) check = false;
   }
-  //let possible = Math.random()*10
-  let possible = 10;
+  let possible = Math.random()*10
+  //let possible = 10;
   if (check && (possible>8)) {
     var currentClass = "egg e-"+chicken;
     var egg = document.getElementsByClassName(currentClass);
     egg[0].className += ' cloth';
-    //var arr = getRandomInt(this.cloth.length-1);
-    let arr = 2;
+    var arr = getRandomInt(this.cloth.length-1);
+    //let arr = 2;
     while (this.cloth[arr].length==0){
       arr = getRandomInt(this.cloth.length-1);
     }
