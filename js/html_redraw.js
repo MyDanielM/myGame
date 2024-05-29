@@ -6,17 +6,15 @@ function HTMLredraw() {
   this.scoreNums = 4;
 }
 
-let codes = ['111111', '222222', '333333','444444','555555','666666'];
+let apiLogin = "733cd7cc-516a-4215-b4ca-2cec37bbded1";
+let orgID = "a1daa1d8-3bf9-474a-b42e-19479580baa3";
+
+let token = getToken();
+
 let texts = ['Пиво Ч.П.Х', 'Мороженое', 'Кондитерская колбаска', 'Свеча с ароматом свежей корюшки', 'Френч дог', 'Хот дог с корюшкой'];
 
 HTMLredraw.prototype.updateEggPosition = function(data) {
   this.changeAttributesValue(['data-egg-' + data.egg], [data.position]);
-  /*if (data.position == 6){
-    var currentClass = "egg e-"+data.egg;
-    var egg = document.getElementsByClassName(currentClass);
-    egg[0].className = currentClass;
-  }
-  */
 };
 
 HTMLredraw.prototype.updateBasketPosition = function(data) {
@@ -34,7 +32,6 @@ HTMLredraw.prototype.changeAttributesValue = function(attributes, values) {
 HTMLredraw.prototype.updateFishScore = function(data) {
   var element = document.getElementsByClassName('fish-score');
   var cloth = data.value.toString();
-  //element[0].className += " " +cloth;
   element[0].innerHTML += `<div class = \"${cloth}\"></div>`
 };
 
@@ -79,47 +76,53 @@ HTMLredraw.prototype.gameWin = function() {
     this.messageWrap.innerHTML += '<a href="../pages/game.html">'
     let controls = document.getElementById('controls');
     controls.style.zIndex='-10';
-    //controls.z-index = -10;
   }
   else {
     setCookie("isWin", "true", 1);
     this.messageWrap.classList.add("win");
     fish[0].classList+= " win";
     let type = fish[0].childNodes[0].classList[0].split('_');
-    let num;
-    let text;
+    let series;
     switch (type[0]){
       case "sailor":{
-        num = codes[0];
+        //Указываю, какая серия будет запрошена по api
+        series = "ПВ"
         text = texts[0];
         break;
       }
       case "girl":{
-        num =  codes[1];
+        series = "МР"
         text = texts[1];
         break;
       }
-      case "zenit":{
-        num =  codes[2];
+      case "woman":{
+        series = "КК"
         text = texts[2];
         break;
       }
-      case "woman":{
-        num = codes[3];
+      case "zenit":{
+        series = "СК"
         text = texts[3];
         break;
       }
       case "oldman":{
-        num =  codes[4];
+        series = "ФД"
         text = texts[4];
         break;
       }
       case "granny":{
-        num =  codes[5];
+        series = "ХДК"
         text = texts[5];
         break;
       }
     }
+
+    //Запрос по api всех купонов серии series
+    coupons = getCoupons(series);
+    let nums = coupons.notActivatedCoupon.map(coupon => coupon.number);
+    //Выбор рандомного купона, запись его в num
+    let num = nums[Math.floor(Math.random()*nums.length)]
+
     this.messageWrap.innerHTML += `<div class="text">Поздравляем! Твой приз: `+ text+`!</div>`
     this.messageWrap.innerHTML += `<div class="nums">`+num+`</div>`
     //this.messageWrap.innerHTML += '<div class="barcode_base">'
@@ -150,4 +153,63 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   var expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+
+async function getToken() {
+  const apiUrl = 'https://api-ru.iiko.services/api/1/access_token'; 
+  const requestData = {
+      "apiLogin": "733cd7cc-516a-4215-b4ca-2cec37bbded1"
+  };
+
+  try {
+      const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(requestData),
+      });
+
+      if (!response.ok) {
+          throw new Error('Ошибка при получении токена');
+      }
+
+      const data = await response.json();
+      const token = data.token; 
+      return token;
+  } catch (error) {
+      console.error('Произошла ошибка:', error);
+      return null;
+  }
+}
+
+async function getCoupons(series) {
+  const apiUrl = 'https://api-ru.iiko.services/api/1/loyalty/iiko/coupons/by_series'; 
+
+  try {
+      const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Authorization' : token,
+          },
+          body: {
+              'series': series,
+              'pageSize': 0,
+              'page': 0,
+              'organizationId': orgID,
+          },
+      });
+
+      if (!response.ok) {
+          throw new Error('Ошибка при получении списка купонов');
+      }
+
+      const coupons = await response.json();
+      return coupons;
+  } catch (error) {
+      console.error('Произошла ошибка:', error);
+      return null;
+  }
 }
