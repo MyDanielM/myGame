@@ -159,7 +159,7 @@ function setCookie(cname, cvalue, exdays) {
 async function getToken() {
   const apiUrl = 'https://api-ru.iiko.services/api/1/access_token'; 
   const requestData = {
-      "apiLogin": "733cd7cc-516a-4215-b4ca-2cec37bbded1"
+      "apiLogin": apiLogin,
   };
 
   try {
