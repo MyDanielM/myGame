@@ -1,0 +1,17 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3201_7905)">
+<circle cx="30" cy="29.9961" r="30" fill="url(#paint0_radial_3201_7905)"/>
+<path d="M48.5156 9.58701C50.4278 11.0497 49.686 50.9632 49.686 50.9632C39.5408 51.4613 26.7264 51.6316 11.3562 51.1075C10.576 43.8592 9.48363 25.3076 11.3562 9.08762C22.3341 8.52829 35.0342 8.50611 48.5156 9.58701Z" fill="white"/>
+<path d="M48.5156 9.58701C49.0032 9.96002 49.92 18.7575 49.6859 50.9632M48.5156 9.58701C50.4278 11.0497 49.6859 50.9632 49.6859 50.9632M48.5156 9.58701C35.0342 8.50611 22.3341 8.52829 11.3562 9.08762M49.6859 50.9632C39.5408 51.4613 26.7264 51.6316 11.3562 51.1075M11.3562 51.1075C10.576 43.8592 9.48363 25.3076 11.3562 9.08762M11.3562 51.1075C11.3562 51.1075 9.44051 25.6794 11.3562 9.08762" stroke="black" stroke-width="0.669774" stroke-linejoin="round"/>
+<path d="M17.5586 51.2748V9.07903M23.9884 8.74414L24.2563 51.2748M30.8201 51.2748C30.5969 37.4551 30.1369 9.60145 30.0834 8.74414M37.183 51.2748L36.3123 9.07903M43.3449 51.2748L42.6751 9.07903" stroke="black" stroke-width="2.14328" stroke-linejoin="round"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3201_7905" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 29.9961) rotate(90) scale(30)">
+<stop offset="0.67" stop-color="#FFDB1D"/>
+<stop offset="1" stop-color="#AB9628" stop-opacity="0.8"/>
+</radialGradient>
+<clipPath id="clip0_3201_7905">
+<rect width="60" height="60" fill="white"/>
+</clipPath>
+</defs>
+</svg>

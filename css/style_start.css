@@ -1,0 +1,88 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100vh; 
+    overflow: hidden;
+} 
+ 
+.container { 
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+} 
+ 
+.bg, .button, .a { 
+    position: absolute; 
+} 
+
+a{
+    z-index: 31;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+ 
+.bg { 
+    width: 100%; 
+    height: 100%; 
+    z-index: 1; 
+} 
+
+.orientation-vert{
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+    position: absolute;
+    visibility:hidden;
+    background-color: #818181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .orientation-vert .inner{
+    width: 221px;
+    height: 126px;
+    position: absolute;
+    display: block;
+    background-image: url('../img/screens/inner.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .container .place{
+    width: 100%;
+    height: 100%;
+  }
+
+  .container .start{
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .buttons{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .place .buttons img.trainstation, img.emembankment{
+    z-index: 1;
+    width: 431px;
+    height: 95px;
+    cursor: pointer;
+  }
+
+  .place .buttons img.embankment{
+    z-index: 1;
+    width: 431px;
+    height: 95px;
+    cursor: pointer;
+  }
