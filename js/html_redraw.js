@@ -7,14 +7,16 @@ function HTMLredraw() {
 }
 
 let place = getCookie("place");
-console.log(place);
 let apiLogin = "733cd7cc-516a-4215-b4ca-2cec37bbded1";
 let orgID = "a1daa1d8-3bf9-474a-b42e-19479580baa3";
 
 let token;
 initializeToken();
 
-let texts = ['Пиво Ч.П.Х', 'Мороженое', 'Кондитерская колбаска', 'Свеча с ароматом свежей корюшки', 'Френч дог', 'Хот дог с корюшкой'];
+let embankmentTexts = ['Пиво Ч.П.Х', 'Мороженое', 'Кондитерская колбаска', 'Свеча с ароматом свежей корюшки', 'Френч дог', 'Хот дог с корюшкой'];
+let embankmentSeries = ['ПВ','МР','КК','СК','ФД','ХДК'];
+let trainstationTexts = ['','','','','',''];
+let trainstationSeries = ['','','','','',''];
 
 HTMLredraw.prototype.updateEggPosition = function(data) {
   this.changeAttributesValue(['data-egg-' + data.egg], [data.position]);
@@ -85,36 +87,45 @@ HTMLredraw.prototype.gameWin = function() {
     setCookie("isWin", "true", 1);
     this.messageWrap.classList.add("win");
     let type = fish[0].childNodes[0].classList[0].split('_');
-    let series;
+    let serieses;
+    let texts;
+    if (place === 'embankment'){
+      serieses = embankmentSeries;
+      texts = embankmentTexts;
+    }
+    else {
+      serieses = trainstationSeries;
+      texts = trainstationSeries;
+    }
     switch (type[0]){
       case "sailor":{
         //Указываю, какая серия будет запрошена по api
-        series = "ПИ"
+        series = serieses[0];
         text = texts[0];
         break;
       }
       case "girl":{
-        series = "МР"
+        series = serieses[1];
         text = texts[1];
         break;
       }
       case "woman":{
-        series = "КЛБ"
+        series = serieses[2];
         text = texts[2];
         break;
       }
       case "zenit":{
-        series = "СВЧ"
+        series = serieses[3];
         text = texts[3];
         break;
       }
       case "oldman":{
-        series = "ФД"
+        series = serieses[4];
         text = texts[4];
         break;
       }
       case "granny":{
-        series = "ЧПХ"
+        series = serieses[5];
         text = texts[5];
         break;
       }
@@ -210,6 +221,8 @@ async function getCoupons(series, text, fish, messageWrap) {
         messageWrap.innerHTML += `<div class="nums">${num}</div>`;
 
         fish[0].classList += " win";
+
+        setCookie('coupon',num,1);
         messageWrap.show();
     } catch (error) {
         console.error('Произошла ошибка:', error);

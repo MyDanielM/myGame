@@ -1,6 +1,8 @@
 
 var GameManager = function() {
-    checkCookie();
+    if(checkCookie()){
+      return;
+    }
     this.init();
     this.setup();
     this.start(); 
@@ -418,11 +420,14 @@ GameManager.prototype.touchscreenModification = function() {
 
 function checkCookie() {
   var isWin = getCookie("isWin");
+  let coupon = getCookie("coupon");
   if (isWin == "true") {
       let messageWrap = document.querySelector('#message');
       messageWrap.classList.add("try_tommorow");
       messageWrap.show();
+      return true;
   }
+  return false;
 }
 
 function getCookie(cname) {
