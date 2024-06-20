@@ -1,6 +1,7 @@
 
 var GameManager = function() {
     if(checkCookie()){
+      this.init();
       return;
     }
     this.init();
